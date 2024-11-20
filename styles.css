@@ -3,6 +3,10 @@ body {
     background-color: #fdfde4; /* Cor de fundo semelhante */
     margin: 0;
     font-family: Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 /* Estilo da navbar */
@@ -66,7 +70,7 @@ body {
 }
 
 .menu-img {
-    width: 45px; /* Ajuste a largura conforme necessário */
+    width: 36px; /* Ajuste a largura conforme necessário */
     height: auto; /* Mantém a proporção original */
 }
 
@@ -120,15 +124,43 @@ body {
 }
 
 footer {
-    background-color: var(--color-dark);
-    color: var(--color-white);
+    background-color: #1C1C1C;
+    color: white;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
-    border-top: 1px solid var(--color-border-dark);
+    border-top: 1px;
     position: relative;
     width: 100%;
+    font-family: 'menuFont';
+    font-size: 1.3em;
 }
+
+/* tirar borda botao */
 .navbar-toggler{
     border: none;
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: 'menuFont';
+    font-size: 1.5em;
+  }
+  
+  main h1 {
+    font-size: 2.5rem;
+    color: #073b3a;
+    margin-bottom: 20px;
+    font-family: 'bannerFont';
+
+  }

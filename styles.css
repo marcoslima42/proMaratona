@@ -1,10 +1,32 @@
+@font-face{
+    font-family: 'menuFont';
+    src: url('fonts/Rajdhani.ttf'),
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'bannerFont';
+    src: url('fonts/Danbury.otf'),
+    format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'footerFont';
+    src: url('fonts/RedHatDisplay.ttf'),
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Configurações globais */
 body {
     background-color: #fdfde4; /* Cor de fundo semelhante */
     margin: 0;
     font-family: Arial, sans-serif;
-
-    margin: 0;
     padding: 0;
     line-height: 1.6;
 }
@@ -74,22 +96,6 @@ body {
     height: auto; /* Mantém a proporção original */
 }
 
-@font-face{
-    font-family: 'menuFont';
-    src: url('fonts/Rajdhani.ttf'),
-    format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face{
-    font-family: 'bannerFont';
-    src: url('fonts/Danbury.otf'),
-    format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .banner {
     position: relative;
     width: 100%;
@@ -123,18 +129,6 @@ body {
     z-index: 1; /* Camada escura abaixo do texto */
 }
 
-footer {
-    background-color: #1C1C1C;
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    border-top: 1px;
-    position: relative;
-    width: 100%;
-    font-family: 'menuFont';
-    font-size: 1.3em;
-}
 
 /* tirar borda botao */
 .navbar-toggler{
@@ -147,7 +141,7 @@ footer {
     min-height: 100vh;
   }
   
-  main {
+main {
     flex: 1;
     padding: 20px;
     border-radius: 12px;
@@ -157,10 +151,107 @@ footer {
     font-size: 1.5em;
   }
   
-  main h1 {
+main h1 {
     font-size: 2.5rem;
     color: #073b3a;
     margin-bottom: 20px;
     font-family: 'bannerFont';
 
   }
+
+footer {
+    /* #00202a */
+    background-color: #111818; 
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    font-family: 'footerFont';
+}
+
+footer .container_footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .container_footer ul {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 20px;
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Mantem os textos alinhados a esquerda */
+}
+
+footer .container_footer ul h3 {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+footer .container_footer ul p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+footer .container_footer li {
+    margin: 10px 0;
+}
+
+footer .container_footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .container_footer a:hover {
+    color: #00bcd4;
+}
+
+/* footer .container_footer .redes_sociais img {
+    margin-top: 10px;
+    width: 30px;
+    height: auto;
+} */
+
+/* Tamanho tela padrao desktop */
+.logo_footer {
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+    justify-content: flex-start; 
+    margin-top: 10px;
+}
+
+/* Ajuste para telas menores (até 768px) */
+@media (max-width: 768px) {
+    .logo_footer {
+        justify-content: center; 
+    }
+}
+
+
+.logo_footer_img {
+    width: 100px;
+    height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    footer .container_footer {
+        flex-direction: column;
+        align-items: center; /* Centraliza colunas em telas menores */
+        text-align: center;
+    }
+
+    footer .container_footer ul {
+        margin-bottom: 20px;
+        text-align: center; /* Ajusta para centralizar o texto */
+    }
+
+    /* footer .container_footer .redes_sociais img {
+        margin: 0 5px;
+    } */
+}

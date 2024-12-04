@@ -1,213 +1,212 @@
-@font-face{
-    font-family: 'menuFont';
-    src: url('fonts/Rajdhani.ttf'),
-    format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+	font-family: "menuFont";
+	src: url("fonts/Rajdhani.ttf"), format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face{
-    font-family: 'bannerFont';
-    src: url('fonts/Danbury.otf'),
-    format('opentype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+	font-family: "bannerFont";
+	src: url("fonts/Danbury.otf"), format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face{
-    font-family: 'footerFont';
-    src: url('fonts/RedHatDisplay.ttf'),
-    format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+	font-family: "footerFont";
+	src: url("fonts/RedHatDisplay.ttf"), format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* Configurações globais */
 body {
-    background-color: #fdfde4; /* Cor de fundo semelhante */
-    margin: 0;
-    font-family: Arial, sans-serif;
-    padding: 0;
-    line-height: 1.6;
+	/* background-color: #fdfde4; Cor de fundo semelhante */
+	background-color: #f9fafb;
+	margin: 0;
+	/* font-family: Arial, sans-serif; */
+	font-family: "Inter", sans-serif !important;
+	padding: 0;
+	line-height: 1.6;
 }
 
 /* Estilo da navbar */
 .navbar {
-    background-color: #073b3a; /* Cor do topo */
-    padding-top: 10px;  /* Aumenta a altura do topo da navbar */
-    padding-bottom: 15px;  /* Aumenta a altura da parte inferior da navbar */
+	background-color: #073b3a; /* Cor do topo */
+	padding-top: 10px; /* Aumenta a altura do topo da navbar */
+	padding-bottom: 15px; /* Aumenta a altura da parte inferior da navbar */
 }
 
-.nav-item{
-    padding-top: 10px;  /* Aumenta a altura do topo da navbar */
-    padding-bottom: 500x;  /* Aumenta a altura da parte inferior da navbar */
-    margin-top: 15px;
-    font-size: 1.5em;
-    font-family: 'menuFont';
-    font-weight: normal;
+.nav-item {
+	padding-top: 10px; /* Aumenta a altura do topo da navbar */
+	padding-bottom: 500x; /* Aumenta a altura da parte inferior da navbar */
+	margin-top: 15px;
+	font-size: 1.5em;
+	font-family: "menuFont";
+	font-weight: normal;
 }
 
 .navbar-brand {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 24px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 24px;
 }
 
 .navbar-brand span {
-    color: #66cc66; /* Verde similar */
+	color: #66cc66; /* Verde similar */
 }
 
 .navbar-nav .nav-link {
-    color: #fdfde4;
-    font-weight: bold;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+	color: #fdfde4;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #66ccff; /* Azul claro no hover */
+	color: #f4f3e6;
+	/* text-shadow: 0px 3px 20px #fff; */
+	text-decoration-line: underline;
 }
 
 /* Estilo do ícone social */
 .social-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
+	width: 30px;
+	height: 30px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 20px;
 }
 
 .social-icon img {
-    width: 18px;
-    height: 18px;
+	width: 18px;
+	height: 18px;
 }
 
 .logo-img {
-    width: 150px; 
-    height: auto; 
+	width: 150px;
+	height: auto;
 }
 
 .menu-img {
-    width: 36px; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção original */
+	width: 36px; /* Ajuste a largura conforme necessário */
+	height: auto; /* Mantém a proporção original */
 }
 
 .banner {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    background: url('/img/nacional.jpg') no-repeat top center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: url("img/nacional.jpg") no-repeat top center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .banner-text {
-    position: absolute;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    text-align: center;
-    z-index: 2;
-    font-size: 2.0em;
-    font-family: 'bannerFont';
-    font-weight: bold;
+	position: absolute;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	text-align: center;
+	z-index: 2;
+	font-size: 2em;
+	font-family: "bannerFont";
+	font-weight: bold;
 }
 
 /* Camada escura */
 .banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Escurecimento com opacidade */
-    z-index: 1; /* Camada escura abaixo do texto */
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Escurecimento com opacidade */
+	z-index: 1; /* Camada escura abaixo do texto */
 }
 
-
 /* tirar borda botao */
-.navbar-toggler{
-    border: none;
+.navbar-toggler {
+	border: none;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-main {
-    flex: 1;
-    padding: 20px;
-    border-radius: 12px;
-    margin: 20px auto;
-    max-width: 1180px;
-    font-family: 'menuFont';
-    font-size: 1.5em;
-  }
-  
-main h1 {
-    font-size: 2.5rem;
-    color: #073b3a;
-    margin-bottom: 20px;
-    font-family: 'bannerFont';
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 
-  }
+main {
+	flex: 1;
+	padding: 20px;
+	border-radius: 12px;
+	margin: 20px auto;
+	max-width: 1180px !important;
+	font-family: "Inter", sans-serif !important;
+	font-size: 1em;
+}
+
+main h1 {
+	font-size: 2.5rem;
+	color: #073b3a;
+	margin-bottom: 20px;
+	font-family: "bannerFont";
+}
 
 footer {
-    /* #00202a */
-    background-color: #111818; 
-    padding: 40px 20px;
-    color: white;
-    text-align: center;
-    font-family: 'footerFont';
+	/* #00202a */
+	background-color: #111818;
+	padding: 40px 20px;
+	color: white;
+	text-align: center;
+	font-family: "footerFont";
 }
 
 footer .container_footer {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 footer .container_footer ul {
-    flex: 1;
-    min-width: 200px;
-    margin: 0 20px;
-    list-style: none;
-    padding: 0;
-    text-align: left; /* Mantem os textos alinhados a esquerda */
+	flex: 1;
+	min-width: 200px;
+	margin: 0 20px;
+	list-style: none;
+	padding: 0;
+	text-align: left; /* Mantem os textos alinhados a esquerda */
 }
 
 footer .container_footer ul h3 {
-    margin-bottom: 16px;
-    font-weight: 600;
+	margin-bottom: 16px;
+	font-weight: 600;
 }
 
 footer .container_footer ul p {
-    margin-bottom: 20px;
-    line-height: 1.6;
+	margin-bottom: 20px;
+	line-height: 1.6;
 }
 
 footer .container_footer li {
-    margin: 10px 0;
+	margin: 10px 0;
 }
 
 footer .container_footer a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+	color: white;
+	text-decoration: none;
+	transition: color 0.3s ease;
 }
 
 footer .container_footer a:hover {
-    color: #00bcd4;
+	color: #00bcd4;
 }
 
 /* footer .container_footer .redes_sociais img {
@@ -218,40 +217,70 @@ footer .container_footer a:hover {
 
 /* Tamanho tela padrao desktop */
 .logo_footer {
-    display: flex;
-    gap: 20px;
-    align-items: center; 
-    justify-content: flex-start; 
-    margin-top: 10px;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 10px;
 }
 
 /* Ajuste para telas menores (até 768px) */
 @media (max-width: 768px) {
-    .logo_footer {
-        justify-content: center; 
-    }
+	.logo_footer {
+		justify-content: center;
+	}
 }
 
-
 .logo_footer_img {
-    width: 100px;
-    height: auto;
+	width: 100px;
+	height: auto;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    footer .container_footer {
-        flex-direction: column;
-        align-items: center; /* Centraliza colunas em telas menores */
-        text-align: center;
-    }
+	footer .container_footer {
+		flex-direction: column;
+		align-items: center; /* Centraliza colunas em telas menores */
+		text-align: center;
+	}
 
-    footer .container_footer ul {
-        margin-bottom: 20px;
-        text-align: center; /* Ajusta para centralizar o texto */
-    }
+	footer .container_footer ul {
+		margin-bottom: 20px;
+		text-align: center; /* Ajusta para centralizar o texto */
+	}
 
-    /* footer .container_footer .redes_sociais img {
+	/* footer .container_footer .redes_sociais img {
         margin: 0 5px;
     } */
+}
+
+/* .hero-section {
+	background: linear-gradient(rgba(0, 48, 36, 0.9), rgba(0, 48, 36, 0.9)), url("/api/placeholder/1920/600");
+	background-size: cover;
+	color: white;
+	padding: 100px 0;
+} */
+
+/* .navbar { */
+/* background-color: #003024 !important;
+} */
+.feature-card {
+	transition: transform 0.3s ease;
+}
+.feature-card:hover {
+	transform: translateY(-5px);
+}
+.icon-circle {
+	width: 60px;
+	height: 60px;
+	background-color: #003024;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1rem;
+}
+
+.text-primary {
+	color: #003024 !important;
 }

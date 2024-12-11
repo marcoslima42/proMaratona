@@ -56,3 +56,11 @@ main h1 {
 .text-primary {
 	color: #003024 !important;
 }
+
+.objetivo-texto{
+	font-family: "footerFont";
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 0.8px;
+	text-align: center
+}

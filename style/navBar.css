@@ -69,3 +69,11 @@
 .navbar-toggler{
 	border: none;
 }
+
+.nav-item {
+    font-size: 1.2em; /* Ajuste conforme necessário */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1em; /* Ajuste conforme necessário */
+}

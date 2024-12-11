@@ -5,7 +5,7 @@
 }
 
 /* Configurações globais */
-body{
+body {
 	/* background-color: #fdfde4; Cor de fundo semelhante */
 	background-color: white;
 	margin: 0;
@@ -14,6 +14,7 @@ body{
 	padding: 0;
 	line-height: 1.6;
 }
+
 /* a classe body esta inativa por conta do wrapper */
 
 /* texto home */
@@ -57,7 +58,7 @@ main h1 {
 	color: #003024 !important;
 }
 
-.objetivo-texto{
+.objetivo-texto {
 	font-family: "footerFont";
 	font-size: 2.3rem;
 	font-weight: bold;

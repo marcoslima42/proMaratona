@@ -1,13 +1,18 @@
 /* Estilo da navbar */
 .navbar {
-	background-color: #073b3a; /* Cor do topo */
-	padding-top: 10px; /* Aumenta a altura do topo da navbar */
-	padding-bottom: 15px; /* Aumenta a altura da parte inferior da navbar */
+	background-color: #073b3a;
+	/* Cor do topo */
+	padding-top: 10px;
+	/* Aumenta a altura do topo da navbar */
+	padding-bottom: 15px;
+	/* Aumenta a altura da parte inferior da navbar */
 }
 
 .nav-item {
-	padding-top: 10px; /* Aumenta a altura do topo da navbar */
-	padding-bottom: 500x; /* Aumenta a altura da parte inferior da navbar */
+	padding-top: 10px;
+	/* Aumenta a altura do topo da navbar */
+	padding-bottom: 500x;
+	/* Aumenta a altura da parte inferior da navbar */
 	margin-top: 15px;
 	font-size: 1.5em;
 	font-family: "menuFont";
@@ -21,7 +26,7 @@
 }
 
 .navbar-brand span {
-	color: #66cc66; 
+	color: #66cc66;
 }
 
 .navbar-nav .nav-link {
@@ -61,19 +66,23 @@
 }
 
 .menu-img {
-	width: 36px; /* Ajuste a largura conforme necessário */
-	height: auto; /* Mantém a proporção original */
+	width: 36px;
+	/* Ajuste a largura conforme necessário */
+	height: auto;
+	/* Mantém a proporção original */
 }
 
 /* tirar borda botao menu hamburger */
-.navbar-toggler{
+.navbar-toggler {
 	border: none;
 }
 
 .nav-item {
-    font-size: 1.2em; /* Ajuste conforme necessário */
+	font-size: 1.2em;
+	/* Ajuste conforme necessário */
 }
 
 .navbar-nav .nav-link {
-    font-size: 1em; /* Ajuste conforme necessário */
+	font-size: 1em;
+	/* Ajuste conforme necessário */
 }

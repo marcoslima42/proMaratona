@@ -1,4 +1,4 @@
-footer{
+footer {
 	background-color: #00202a;
 	padding: 40px 20px;
 	color: white;
@@ -22,8 +22,8 @@ footer .container_footer ul {
 	margin: 0 20px;
 	list-style: none;
 	padding: 0;
-    /* Mantem os textos alinhados a esquerda */
-	text-align: left; 
+	/* Mantem os textos alinhados a esquerda */
+	text-align: left;
 }
 
 footer .container_footer ul h3 {
@@ -87,14 +87,14 @@ footer .container_footer .redes_sociais img {
 	footer .container_footer {
 		flex-direction: column;
 		/* Centraliza colunas em telas menores */
-        align-items: center; 
+		align-items: center;
 		text-align: center;
 	}
 
 	footer .container_footer ul {
 		margin-bottom: 20px;
 		/* Ajusta para centralizar o texto */
-        text-align: center; 
+		text-align: center;
 	}
 
 	/* footer .container_footer .redes_sociais img {

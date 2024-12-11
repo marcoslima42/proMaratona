@@ -1,249 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>ProMaratona</title>
-		<!-- Import CSS -->
-		<link rel="stylesheet" href="/style/body.css">
-		<link rel="stylesheet" href="/style/navBar.css">
-		<link rel="stylesheet" href="/style/footer.css">
-		<link rel="stylesheet" href="/style/font.css">
-		<link rel="stylesheet" href="/style/banner.css">
-		<!-- Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-		<!-- Link para o CSS externo -->
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="shotcut icon" href="../img/logoBaloes.png" type="image/x-icon"/>
-	</head>
 
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<div class="container">
-				<!-- Logo -->
-				<a href="post.html" class="navbar-brand" href="#">
-					<img src="../img/promaratona_logo.gif" class="logo-img"/>
-				</a>
-				<!-- Botão Toggler -->
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-		
-					<span> <a><img src="../img/menu.png" class="menu-img"/></a> </span>
-				</button>
-				<!-- Links e Dropdowns -->
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<!-- Dropdown 1 -->
-						<li class="nav-item">
-							<a class="nav-link" href="#">Treinamento</a>
-						</li>
-						<!-- Dropdown 2 -->
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="dropdown2"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Ferramentas
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="dropdown2">
-								<li><a class="dropdown-item" href="#">Ambiente BOCA</a></li>
-								<li><a class="dropdown-item" href="#">Como instalar o BOCA</a></li>
-								<li><a class="dropdown-item" href="#">Criação de Problemas</a></li>
-								<li><a class="dropdown-item" href="#">FAQ</a></li>
-							</ul>
-						</li>
-						<!-- Dropdown 3 -->
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="dropdown3"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Conheça Mais
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="dropdown3">
-								<li><a class="dropdown-item" href="#">OBI</a></li>
-								<li><a class="dropdown-item" href="#">Maratona Mineira</a></li>
-								<li><a class="dropdown-item" href="#">Maratona SBC</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ProMaratona</title>
+	<!-- Import CSS -->
+	<link rel="stylesheet" href="/style/body.css">
+	<link rel="stylesheet" href="/style/navBar.css">
+	<link rel="stylesheet" href="/style/footer.css">
+	<link rel="stylesheet" href="/style/font.css">
+	<link rel="stylesheet" href="/style/banner.css">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+	<!-- Link para o CSS externo -->
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="shotcut icon" href="../img/logoBaloes.png" type="image/x-icon" />
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+			<!-- Logo -->
+			<a href="post.html" class="navbar-brand" href="#">
+				<img src="../img/promaratona_logo.gif" class="logo-img" />
+			</a>
+			<!-- Botão Toggler -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+				<span> <a><img src="../img/menu.png" class="menu-img" /></a> </span>
+			</button>
+			<!-- Links e Dropdowns -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<!-- Dropdown 1 -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">Treinamento</a>
+					</li>
+					<!-- Dropdown 2 -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown2" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Ferramentas
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdown2">
+							<li><a class="dropdown-item" href="#">Ambiente BOCA</a></li>
+							<li><a class="dropdown-item" href="#">Como instalar o BOCA</a></li>
+							<li><a class="dropdown-item" href="#">Criação de Problemas</a></li>
+							<li><a class="dropdown-item" href="#">FAQ</a></li>
+						</ul>
+					</li>
+					<!-- Dropdown 3 -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown3" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Conheça Mais
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdown3">
+							<li><a class="dropdown-item" href="#">OBI</a></li>
+							<li><a class="dropdown-item" href="#">Maratona Mineira</a></li>
+							<li><a class="dropdown-item" href="#">Maratona SBC</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
-		</nav>
-
-		<div class="banner">
-			<div class="banner-text">GRUPO DE PROGRAMAÇÃO COMPETITIVA</div>
 		</div>
+	</nav>
 
-		<div class="wrapper">
-			<!-- Wrapper div for the main content -->
+	<div class="banner">
+		<div class="banner-text">GRUPO DE PROGRAMAÇÃO COMPETITIVA</div>
+	</div>
 
-			<!-- Conteúdo Principal -->
-			<main class="container py-4 col-lg-8">
-				<!-- Seção de Boas-vindas -->
-				<!-- <section class="row justify-content-center">-->
-				<section id="inicio" class="py-5">
-					<div class="container">
-						<!-- <h2 class="display-5 text-primary mb-4">Início</h2> -->
-						<p class="text-secondary mb-4">
-							Este site foi criado como parte da iniciativa <strong>ProMaratona</strong>, um projeto de extensão universitária que visa
-							promover o aprendizado e a prática de programação competitiva.
-						</p>
-					</div>
-				</section>
+	<div class="wrapper">
+		<!-- Wrapper div for the main content -->
 
-				<!-- Objetivos -->
-				<section id="objetivos" class="py-5">
-					<div class="container">
-						<h2 class="objetivo-texto">Objetivos</h2>
-						<div class="row g-4">
-							<div class="col-md-4">
-								<div class="card h-100 feature-card">
-									<div class="card-body text-center">
-										<div class="icon-circle text-white mb-3">
-											<i class="bi bi-book fs-4"></i>
-										</div>
-										<h5 class="card-title">Educação</h5>
-										<p class="card-text">Fornecer tutoriais e materiais de apoio para estudantes.</p>
+		<!-- Conteúdo Principal -->
+		<main class="container py-4 col-lg-8">
+			<!-- Seção de Boas-vindas -->
+			<!-- <section class="row justify-content-center">-->
+			<section id="inicio" class="py-5">
+				<div class="container">
+					<!-- <h2 class="display-5 text-primary mb-4">Início</h2> -->
+					<p class="text-secondary mb-4">
+						Este site foi criado como parte da iniciativa <strong>ProMaratona</strong>, um projeto de
+						extensão universitária que visa
+						promover o aprendizado e a prática de programação competitiva.
+					</p>
+				</div>
+			</section>
+
+			<!-- Objetivos -->
+			<section id="objetivos" class="py-5">
+				<div class="container">
+					<h2 class="objetivo-texto">Objetivos</h2>
+					<div class="row g-4">
+						<div class="col-md-4">
+							<div class="card h-100 feature-card">
+								<div class="card-body text-center">
+									<div class="icon-circle text-white mb-3">
+										<i class="bi bi-book fs-4"></i>
 									</div>
+									<h5 class="card-title">Educação</h5>
+									<p class="card-text">Fornecer tutoriais e materiais de apoio para estudantes.</p>
 								</div>
 							</div>
-							<div class="col-md-4">
-								<div class="card h-100 feature-card">
-									<div class="card-body text-center">
-										<div class="icon-circle text-white mb-3">
-											<i class="bi bi-code-slash fs-4"></i>
-										</div>
-										<h5 class="card-title">Prática</h5>
-										<p class="card-text">Oferecer exercícios e desafios para aprimorar habilidades.</p>
+						</div>
+						<div class="col-md-4">
+							<div class="card h-100 feature-card">
+								<div class="card-body text-center">
+									<div class="icon-circle text-white mb-3">
+										<i class="bi bi-code-slash fs-4"></i>
 									</div>
+									<h5 class="card-title">Prática</h5>
+									<p class="card-text">Oferecer exercícios e desafios para aprimorar habilidades.</p>
 								</div>
 							</div>
-							<div class="col-md-4">
-								<div class="card h-100 feature-card">
-									<div class="card-body text-center">
-										<div class="icon-circle text-white mb-3">
-											<i class="bi bi-people fs-4"></i>
-										</div>
-										<h5 class="card-title">Comunidade</h5>
-										<p class="card-text">Criar um espaço para troca de conhecimentos e experiências.</p>
+						</div>
+						<div class="col-md-4">
+							<div class="card h-100 feature-card">
+								<div class="card-body text-center">
+									<div class="icon-circle text-white mb-3">
+										<i class="bi bi-people fs-4"></i>
 									</div>
+									<h5 class="card-title">Comunidade</h5>
+									<p class="card-text">Criar um espaço para troca de conhecimentos e experiências.</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section id="como-usar" class="py-3">
-					<!-- Como Usar -->
-					<div class="card p-4">
-						<h3 class="h3 text-primary mb-4">Como Usar</h3>
-						<ul class="list-unstyled">
-							<li class="d-flex align-items-center mb-3">
-								<span
-									class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
-									style="width: 32px; height: 32px"
-									>1</span
-								>
-								<span class="ms-3 text-secondary"
-									>Navegue pelo Menu: Utilize o menu no topo da página para acessar diferentes seções.</span
-								>
-							</li>
-							<li class="d-flex align-items-center mb-3">
-								<span
-									class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
-									style="width: 32px; height: 32px"
-									>2</span
-								>
-								<span class="ms-3 text-secondary">Tutoriais: Siga os tutoriais passo a passo para aprender novos conceitos.</span>
-							</li>
-							<li class="d-flex align-items-center mb-3">
-								<span
-									class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
-									style="width: 32px; height: 32px"
-									>3</span
-								>
-								<span class="ms-3 text-secondary">Exercícios: Pratique com exercícios de diferentes níveis de dificuldade.</span>
-							</li>
-							<li class="d-flex align-items-center">
-								<span
-									class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
-									style="width: 32px; height: 32px"
-									>4</span
-								>
-								<span class="ms-3 text-secondary">Recursos: Acesse materiais adicionais como artigos, vídeos e links úteis.</span>
-							</li>
-						</ul>
-					</div>
-				</section>
+			<section id="como-usar" class="py-3">
+				<!-- Como Usar -->
+				<div class="card p-4">
+					<h3 class="h3 text-primary mb-4">Como Usar</h3>
+					<ul class="list-unstyled">
+						<li class="d-flex align-items-center mb-3">
+							<span
+								class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
+								style="width: 32px; height: 32px">1</span>
+							<span class="ms-3 text-secondary">Navegue pelo Menu: Utilize o menu no topo da página para
+								acessar diferentes seções.</span>
+						</li>
+						<li class="d-flex align-items-center mb-3">
+							<span
+								class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
+								style="width: 32px; height: 32px">2</span>
+							<span class="ms-3 text-secondary">Tutoriais: Siga os tutoriais passo a passo para aprender
+								novos conceitos.</span>
+						</li>
+						<li class="d-flex align-items-center mb-3">
+							<span
+								class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
+								style="width: 32px; height: 32px">3</span>
+							<span class="ms-3 text-secondary">Exercícios: Pratique com exercícios de diferentes níveis
+								de dificuldade.</span>
+						</li>
+						<li class="d-flex align-items-center">
+							<span
+								class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
+								style="width: 32px; height: 32px">4</span>
+							<span class="ms-3 text-secondary">Recursos: Acesse materiais adicionais como artigos, vídeos
+								e links úteis.</span>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-				<section id="como-usar" class="py-5">
-					<!-- Como Usar -->
-					<div class="card p-4">
-						<h3 class="h3 text-primary mb-4">Contato</h3>
+			<section id="como-usar" class="py-5">
+				<!-- Como Usar -->
+				<div class="card p-4">
+					<h3 class="h3 text-primary mb-4">Contato</h3>
 
-						<p>
-							Se tiver dúvidas ou sugestões, entre em contato conosco através do
-							<a href="mailto:maratona.upt@iftm.edu.br">e-mail (maratona.upt@iftm.edu.br)</a>.
-						</p>
-					</div>
-				</section>
+					<p>
+						Se tiver dúvidas ou sugestões, entre em contato conosco através do
+						<a href="mailto:maratona.upt@iftm.edu.br">e-mail (maratona.upt@iftm.edu.br)</a>.
+					</p>
+				</div>
+			</section>
 
-				<section class="row justify-content-center">
-					<div class="container">
-						<p class="text-secondary mb-4">Esperamos que você aproveite ao máximo os recursos disponíveis. Boa sorte e bons estudos!</p>
-					</div>
-				</section>
-			</main>
-		</div>
+			<section class="row justify-content-center">
+				<div class="container">
+					<p class="text-secondary mb-4">Esperamos que você aproveite ao máximo os recursos disponíveis. Boa
+						sorte e bons estudos!</p>
+				</div>
+			</section>
+		</main>
+	</div>
 
-		<footer>
-			<div class="container_footer">
-				<!-- UL1 -->
-				<ul>
-					<h3>Grupo de Programação Competitiva</h3>
-					<p>Projeto de extensão do Instituto Federal do Triângulo Mineiro</p>
-					<div class="logo_footer">
-						<img src="../img/promaratonaWhite.png" class="logo_footer_img" alt="Logo 1" />
-						<img src="../img/if.png" class="logo_footer_img" alt="Logo 2" />
-					</div>
-					<!-- <div class="redes_sociais">
+	<footer>
+		<div class="container_footer">
+			<!-- UL1 -->
+			<ul>
+				<h3>Grupo de Programação Competitiva</h3>
+				<p>Projeto de extensão do Instituto Federal do Triângulo Mineiro</p>
+				<div class="logo_footer">
+					<img src="../img/promaratonaWhite.png" class="logo_footer_img" alt="Logo 1" />
+					<img src="../img/if.png" class="logo_footer_img" alt="Logo 2" />
+				</div>
+				<!-- <div class="redes_sociais">
                         <img src="img/logoBaloes.png" alt="Instagram">
                     </div> -->
-				</ul>
-				<!-- UL2 -->
-				<ul>
-					<h3>Treinamento</h3>
-					<li><a href="#">Sites de Estudo</a></li>
-					<li><a href="#">Principais Competições</a></li>
-				</ul>
-				<!-- UL3 -->
-				<ul>
-					<h3>Ferramentas</h3>
-					<li><a href="#">Ambiente BOCA</a></li>
-					<li><a href="#">Como instalar o BOCA</a></li>
-					<li><a href="#">Criação de Problemas</a></li>
-					<li><a href="#">FAQ</a></li>
-				</ul>
-			</div>
-		</footer>
+			</ul>
+			<!-- UL2 -->
+			<ul>
+				<h3>Treinamento</h3>
+				<li><a href="#">Sites de Estudo</a></li>
+				<li><a href="#">Principais Competições</a></li>
+			</ul>
+			<!-- UL3 -->
+			<ul>
+				<h3>Ferramentas</h3>
+				<li><a href="#">Ambiente BOCA</a></li>
+				<li><a href="#">Como instalar o BOCA</a></li>
+				<li><a href="#">Criação de Problemas</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</div>
+	</footer>
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

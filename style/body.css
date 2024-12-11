@@ -59,8 +59,9 @@ main h1 {
 
 .objetivo-texto{
 	font-family: "footerFont";
-	font-size: 3rem;
+	font-size: 2.3rem;
 	font-weight: bold;
-	padding: 0.8px;
-	text-align: center
+	padding: 2px;
+	padding-bottom: 20px;
+	text-align: center;
 }

@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "menuFont";
+	src: url("/fonts/Rajdhani.ttf"), format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+/* fonts/Rajdhani.ttf */
+@font-face {
+	font-family: "bannerFont";
+	src: url("/fonts/Danbury.otf"), format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "footerFont";
+	src: url("/fonts/RedHatDisplay.ttf"), format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}

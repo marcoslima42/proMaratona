@@ -1,0 +1,58 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* Configurações globais */
+body{
+	/* background-color: #fdfde4; Cor de fundo semelhante */
+	background-color: white;
+	margin: 0;
+	/* font-family: Arial, sans-serif; */
+	font-family: "Inter", sans-serif !important;
+	padding: 0;
+	line-height: 1.6;
+}
+/* a classe body esta inativa por conta do wrapper */
+
+/* texto home */
+main {
+	flex: 1;
+	padding: 20px;
+	border-radius: 12px;
+	margin: 20px auto;
+	max-width: 1180px !important;
+	font-family: "Inter", sans-serif !important;
+	font-size: 1em;
+}
+
+main h1 {
+	font-size: 2.5rem;
+	color: #073b3a;
+	margin-bottom: 20px;
+	font-family: "bannerFont";
+}
+
+.feature-card {
+	transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+	transform: translateY(-5px);
+}
+
+.icon-circle {
+	width: 60px;
+	height: 60px;
+	background-color: #003024;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1rem;
+}
+
+.text-primary {
+	color: #003024 !important;
+}

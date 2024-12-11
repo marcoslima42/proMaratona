@@ -1,0 +1,71 @@
+/* Estilo da navbar */
+.navbar {
+	background-color: #073b3a; /* Cor do topo */
+	padding-top: 10px; /* Aumenta a altura do topo da navbar */
+	padding-bottom: 15px; /* Aumenta a altura da parte inferior da navbar */
+}
+
+.nav-item {
+	padding-top: 10px; /* Aumenta a altura do topo da navbar */
+	padding-bottom: 500x; /* Aumenta a altura da parte inferior da navbar */
+	margin-top: 15px;
+	font-size: 1.5em;
+	font-family: "menuFont";
+	font-weight: normal;
+}
+
+.navbar-brand {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.navbar-brand span {
+	color: #66cc66; 
+}
+
+.navbar-nav .nav-link {
+	color: #fdfde4;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+	color: #f4f3e6;
+	/* text-shadow: 0px 3px 20px #fff; */
+	text-decoration-line: underline;
+}
+
+/* Estilo do ícone social */
+.social-icon {
+	width: 30px;
+	height: 30px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 20px;
+}
+
+.social-icon img {
+	width: 18px;
+	height: 18px;
+}
+
+.logo-img {
+	width: 150px;
+	height: auto;
+}
+
+.menu-img {
+	width: 36px; /* Ajuste a largura conforme necessário */
+	height: auto; /* Mantém a proporção original */
+}
+
+/* tirar borda botao menu hamburger */
+.navbar-toggler{
+	border: none;
+}

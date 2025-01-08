@@ -1,7 +1,7 @@
 /* Estilo da navbar */
 .navbar {
 	background-color: #073b3a;
-	/* Cor do topo */
+	/* Cor da navbar*/
 	padding-top: 10px;
 	/* Aumenta a altura do topo da navbar */
 	padding-bottom: 15px;
@@ -29,14 +29,17 @@
 	color: #66cc66;
 }
 
+/* Estilo inicial para todos os links da navbar */
 .navbar-nav .nav-link {
-	color: #fdfde4;
-	font-weight: bold;
-	margin-left: 15px;
-	margin-top: 15px;
-	margin-bottom: 10px;
+    position: relative;
+    color: #fdfde4;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+	display: inline-block;
 }
-
 .navbar-nav .nav-link:hover {
 	color: #f4f3e6;
 	/* text-shadow: 0px 3px 20px #fff; */
@@ -79,10 +82,82 @@
 
 .nav-item {
 	font-size: 1.2em;
-	/* Ajuste conforme necessário */
 }
 
 .navbar-nav .nav-link {
 	font-size: 1em;
-	/* Ajuste conforme necessário */
 }
+
+/* efeito hover */
+
+/* Barra invisível inicialmente */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Começa da esquerda */
+    width: 0; /* Largura inicial: 0 (invisivel) */
+    height: 3px; /* Altura da barra */
+    background-color: #fdfde4; /* Cor da barra */
+    transition: width 0.3s ease; /* velocidade que cresce a barra */
+    visibility: hidden; /* estado inicial invisivel */
+}
+
+/* Barra aparece ao passar o mouse */
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    visibility: visible; /* Torna a barra visível */
+}
+
+/* Estilo de hover no texto */
+.navbar-nav .nav-link:hover {
+    color: #f4f3e6;
+    text-decoration: none;
+}
+
+/* Estilo de hover que dar cor a linha dentro do submenu */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+	background-color: #066b6a; 
+	color: #fff;
+}
+
+/* submenu aparecendo quando passa o mouse */
+@media (min-width: 990px) {
+	/* Adicionando a setinha ao lado do nome do menu */
+	.navbar-nav .nav-link .arrow {
+		font-size: 0.8em;
+		margin-left: 5px; /* Espaçamento entre o nome e a setinha */
+	}
+
+	/* Mostrar o submenu ao passar o mouse */
+	.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+		display: block; /* Exibe o submenu quando o item pai for hover */
+	}
+
+	/* Estilo para o submenu */
+	.navbar-nav .dropdown-menu {
+		display: none; /* O submenu começa oculto */
+		position: absolute; 
+		top: 100%; /* Alinha ao item pai */
+		left: 0;
+		background-color: #ffffff;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	/* Barra que cresce do hover */
+	.navbar-nav .nav-link:hover::after {
+		width: 100%;
+		visibility: visible;
+	}
+}
+
+/* tamanho da seta dos botoes da navbar */
+
+.nav-link .bi {
+    margin-left: 4px; /* Espaçamento entre o texto e a seta */
+    font-size: 0.6em; /* Ajuste do tamanho do ícone */
+}
+
+

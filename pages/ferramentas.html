@@ -2,11 +2,10 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ferramentas - ProMaratona</title>
-    <!-- Import CSS files -->
+    <!-- Import CSS -->
     <link rel="stylesheet" href="/style/body.css">
     <link rel="stylesheet" href="/style/navBar.css">
     <link rel="stylesheet" href="/style/footer.css">
@@ -15,7 +14,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-    <!-- External CSS -->
+    <!-- Link para o CSS externo -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="shotcut icon" href="../img/logoBaloes.png" type="image/x-icon" />
 </head>
@@ -24,36 +23,31 @@
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <!-- Logo -->
             <a href="index.html" class="navbar-brand">
                 <img src="../img/promaratona_logo.gif" class="logo-img" />
             </a>
-            <!-- Toggler button for mobile view -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span><a><img src="../img/menu.png" class="menu-img" /></a></span>
+                <span><img src="../img/menu.png" class="menu-img" /></span>
             </button>
-            <!-- Navigation links and dropdowns -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <!-- Link to Treinamento -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Treinamento</a>
                     </li>
-                    <!-- Dropdown for Ferramentas -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown2" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Ferramentas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown2">
-                            <li><a class="dropdown-item" href="ferramentas.html">Como instalar o Docker</a></li>
-                            <li><a class="dropdown-item" href="ferramentas.html">Como instalar o BOCA</a></li>
-                            <li><a class="dropdown-item" href="ferramentas.html">Criação de problemas</a></li>
-                            <li><a class="dropdown-item" href="ferramentas.html">Perguntas frequentes</a></li>
+                            <li><a class="dropdown-item" href="ferramentas.html#ambiente-boca">Ambiente BOCA</a></li>
+                            <li><a class="dropdown-item" href="ferramentas.html#como-instalar-boca">Como Instalar o
+                                    BOCA</a></li>
+                            <li><a class="dropdown-item" href="ferramentas.html#criacao-contest">Criação de Contest</a>
+                            </li>
                         </ul>
                     </li>
-                    <!-- Dropdown for Conheça Mais -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown3" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,88 +67,349 @@
     <div class="wrapper">
         <!-- Main content -->
         <main class="container py-4 col-lg-8">
-            <!-- Section for Início -->
-            <section id="inicio" class="py-5">
+
+            <section id="ambiente-boca" class="py-5">
                 <div class="container">
-                    <h1>
-                        Ferramentas
-                    </h1>
+                    <h1>Ambiente BOCA</h1>
                     <p class="text-secondary mb-4">
-                        Nesta página teremos o tuturial para instalação do BOCA conteinerizado.
-                        Para começar o processo é preciso ter o Docker instalado. Se você já tem
-                        o Docker instalado, pule para a seção de instalação do BOCA.
+                        Conheça os pré-requisitos e entenda como configurar o ambiente necessário para utilizar o
+                        BOCA,
+                        incluindo a instalação do Docker.
                     </p>
                 </div>
             </section>
+            <!-- Ambiente BOCA Section -->
 
-            <!-- Section for Como Usar with 4 topics -->
-            <section id="como-usar" class="py-3">
-                <div class="card p-4">
-                    <h3 class="h3 text-primary mb-4">4 tópicos</h3>
-                    <ul class="list-unstyled">
-                        <li class="d-flex align-items-center mb-3">
-                            <span
-                                class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
-                                style="width: 32px; height: 32px">1</span>
-                            <span class="ms-3 text-secondary">Instalação do Docker</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                            <span
-                                class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
-                                style="width: 32px; height: 32px">2</span>
-                            <span class="ms-3 text-secondary">Instalação do BOCA</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                            <span
-                                class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
-                                style="width: 32px; height: 32px">3</span>
-                            <span class="ms-3 text-secondary">Como criar pacotes de problemas de programação</span>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <span
-                                class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
-                                style="width: 32px; height: 32px">4</span>
-                            <span class="ms-3 text-secondary">Perguntas frequentes</span>
-                        </li>
+            <!-- Como Instalar o BOCA Section -->
+            <section id="como-instalar-boca" class="py-5">
+                <div class="container">
+                    <h1>Como Instalar o BOCA</h1>
+                    <p class="text-secondary mb-4">
+                        Confira os passos necessários para instalar o BOCA em diferentes sistemas operacionais.
+                    </p>
+                    <h2>Pré-requisitos</h2>
+                    <ul>
+                        <li>Instalar o Docker.</li>
+                        <li>Configurar o WSL2 no Windows (se aplicável).</li>
                     </ul>
-                </div>
-            </section>
 
-            <!-- Section for Objetivos -->
-            <section id="objetivos" class="py-5">
-                <div class="container">
-                    <p class="text-secondary mb-4">
-                        Nesta página teremos o tuturial para instalação do BOCA conteinerizado.
-                        Para começar o processo é preciso ter o Docker instalado. Se você já tem
-                        o Docker instalado, pule para a seção de instalação do BOCA.
-                    </p>
-                </div>
-            </section>
+                    <h2>Tutorial de Instalação do Docker</h2>
+                    <p>Docker é uma ferramenta de conteinerização que permite criar ambientes modulares e leves, em
+                        comparação às máquinas virtuais.
+                        Nesse tutorial iremos abordar a instalação e configuração do Docker em duas plataformas,
+                        Windows
+                        e Linux.</p>
+                    <h3>Preparando o Ambiente Windows</h3>
+                    <p>Existem duas maneiras para obter o Docker no Windows, sendo o Docker Desktop e o Docker
+                        Engine.
+                        Ambas opções necessitam da ferramenta WSL 2, um subsistema Windows para Linux. O WSL permite
+                        executar uma distro Linux sem necessitar de uma máquina virtual.
+                        Nesta subseção, abordaremos como instalar o Docker Engine, uma vez que este método é
+                        semelhante
+                        ao Linux nativo e mais eficiente.</p>
+                    <h4>Requisitos mínimos do WSL 2</h4>
+                    <ul>
+                        <li>Windows 10 versão 2004 ou superior</li>
+                        <li>Windows 11 versão 22000 ou superior</li>
+                        <li>4GB de memória RAM (Recomendado 8GB)</li>
+                        <li>Processador compatível com virtualização</li>
+                    </ul>
+                    <p>Para conseguir uma performance estável mantenha o Windows devidamente atualizado, as
+                        dependências
+                        do WSL 2 são constantemente atualizadas pelo Windows Update.</p>
+                    <h4>Instalação do WSL 2</h4>
+                    <p>No powershell siga os passos:</p>
+                    <p>No windows 10 a partir da versão 2004 ou no Windows 11 o WSL já está instalado.
+                        Para atualizar o WSL digite:</p>
+                    <pre><code>wsl -update</code></pre>
+                    <p>Atribua a versão 2 como padrão do WSL, digite:</p>
+                    <pre><code>wsl --set-default-version 2</code></pre>
+                    <p>Iremos instalar o Ubuntu, distro padrão do WSL.
+                        Execute o comando:</p>
+                    <pre><code>wsl --install</code></pre>
+                    <p>Após instalar o Ubuntu, abrirá um novo terminal, sendo o próprio ambiente Linux pedindo Unix
+                        username e o password. Cuidado para não colocar uma senha que vá esquecer, ela será
+                        necessária
+                        em outros momentos.</p>
+                    <p>Caso não apareça o novo terminal provavelmente sua máquina estará com a opção de
+                        virtualização
+                        desativada. Nesse caso, procure em um tutorial específico para sua placa-mãe (ou no próprio
+                        manual que vêm com ela) como ativar a virtualização.
+                        Para acessar o Linux, na barra ‘procurar’ do windows digite Ubuntu e tecle Enter.</p>
+                    <p>Após instalar a distro Ubuntu dentro do WSL, a instalação do Docker será a mesma no Windows e
+                        Linux.</p>
+                    <h3>Instalando Docker (No Ubuntu ou no WSL 2 com Ubuntu)</h3>
+                    <p>No Ubuntu nativo entre no terminal, no Windows na barra de pesquisa procure por Ubuntu e
+                        tecle
+                        Enter. Nas duas plataformas siga os passos abaixo.</p>
+                    <p>Para evitar conflito de pacotes execute:</p>
+                    <pre><code>for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done</code></pre>
+                    <p>Antes de instalar execute o seguinte comando para configurar a máquina:</p>
+                    <pre><code># Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
 
-            <!-- Section for Como Usar with contact box -->
-            <section id="como-usar" class="py-5">
-                <div class="card p-4">
-                    <h3 class="h3 text-primary mb-4">Box Contato</h3>
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update</code></pre>
+                    <p>Para instalar a versão mais recente do Docker, execute (obs.: se te for perguntado: “After
+                        this
+                        operation, 442 MB of additional disk space will be used. Do you want to continue? [Y/n]”,
+                        tecle
+                        y e Enter):</p>
+                    <pre><code>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</code></pre>
+                    <p>Verifique se a instalação foi bem sucedida executando a imagem hello-world:</p>
+                    <pre><code>sudo docker run hello-world</code></pre>
+                    <p>Deverá aparecer uma mensagem semelhante a essa:</p>
+                    <p>Pronto, você instalou o Docker com sucesso!</p>
+
+                    <h2>Instalação no Windows (com WSL 2)</h2>
+                    <p>Tutorial de Instalação do BOCA Conteinerizado para Windows (com WSL 2)</p>
                     <p>
-                        Se tiver dúvidas ou sugestões, entre em contato conosco através do e-mail:
-                        <a href="mailto:maratona.upt@iftm.edu.br"> maratona.upt@iftm.edu.br</a>.
+                        Observações iniciais: <br />
+                        Sempre que te forem feitas perguntas no terminal cujas opções de resposta são [Y/n], tecle Y
+                        e
+                        tecle Enter.<br />
+                        Antes de qualquer alteração sempre realizar apt-get update e apt-get upgrade com fim de
+                        obter
+                        sempre os recursos mais recentes.
+                    </p>
+                    <p>
+                        Para a instalação do BOCA conteinerizado utilizaremos o projeto do João Vitor Fazolo, nele
+                        temos
+                        a imagem de três contêineres, o boca-web, boca-jail e o banco de dados PostgreSQL. Os três
+                        containers trabalharam em conjunto para o funcionamento do BOCA.
+                    </p>
+                    <p>
+                        Após instalado o Docker e o WSL 2, abra o terminal do Linux Ubuntu na sua máquina. Para
+                        isso,
+                        será necessário pesquisar por Ubuntu no Menu Iniciar do Windows.
+                    </p>
+
+                    <!-- Imagem -->
+
+                    <p>
+                        Obs.: A primeira vez que colocar um comando com a palavra “sudo” após abrir o terminal será
+                        necessário digitar a sua senha (que foi configurada na instalação do WSL 2) e teclar Enter
+                        para
+                        executar o comando.
+                    </p>
+                    <p>No Ubuntu digite:</p>
+                    <pre><code>sudo docker ps</code></pre>
+                    <p>
+                        Se, após este comando, não houver nenhum container funcionando (o que é esperado, caso não
+                        tenha
+                        usado docker e esteja seguindo o tutorial do zero), aparecerá o seguinte:
+                    </p>
+
+                    <!-- Imagem -->
+
+                    <p>
+                        Após isso, crie uma pasta onde baixará os arquivos ‘docker-compose.yml’ e
+                        ‘docker-compose.prod.yml’ que serão encontrados no repositório do João Fazolo (recomendamos
+                        criar uma pasta na raiz do sistema, direto no “c:” e para facilitar renomeie como “boca”),
+                        após
+                        baixar os arquivos precisamos transferi-los para o Ubuntu. Clique aqui para o repositório.
+                    </p>
+
+                    <!-- Imagem -->
+
+                    <p>
+                        Para transferir os arquivos do Windows para o Ubuntu no WSL será necessário entender como
+                        acessar e manipular arquivos no terminal.
+                    </p>
+                    <p>
+                        Se você seguiu os passos anteriores, agora os dois arquivos estão na pasta “boca” no
+                        diretório
+                        C.
+                        Resumidamente, o procedimento é acessar o diretório C do Windows, copiar a pasta e colar
+                        para o
+                        diretório home do Ubuntu.
+                    </p>
+
+                    <!-- Imagem -->
+
+                    <p>
+                        Para acessar o diretório C do Windows no terminal do Ubuntu digite o comando:
+                    </p>
+                    <pre><code>cd /mnt/c</code></pre>
+                    <p>
+                        Naturalmente “cd” é o comando do bash do Linux para mudar de diretório, o “/mnt/c” vem do
+                        WSL
+                        onde monta o dispositivo Windows para o sistema Linux.
+                    </p>
+                    <p>
+                        Certo, nesse ponto já acessamos o diretório “C:” do Windows, em seguida acesse a sua pasta
+                        “boca”, digite:
+                    </p>
+                    <pre><code>cd /mnt/c/boca</code></pre>
+                    <p>
+                        Agora já no diretório que se encontra os arquivos copiamos a pasta “boca” para o Linux com o
+                        comando. Sendo “usuario” o nome do seu usuário Linux:
+                    </p>
+                    <pre><code>cp -r /mnt/c/boca /home/usuario</code></pre>
+                    <p>Nesse ponto você tem acesso à pasta “boca” pelo próprio Ubuntu.</p>
+                    <p>
+                        Dentro do diretório da pasta “boca” no Ubuntu, execute o comando:
+                    </p>
+                    <pre><code>sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d</code></pre>
+                    <p>
+                        Ao final da execução confira se aparece o que está na imagem abaixo:
+                    </p>
+
+                    <!-- Imagem -->
+
+                    <p>
+                        Se está como o que foi mostrado na imagem acima, então deu certo a criação do container
+                        BOCA, ou
+                        seja, você já o possui funcionando na sua máquina.
+                    </p>
+                    <p>
+                        Para acessar a interface do BOCA entre em:
+                    </p>
+                    <pre><code>http://localhost:8000/boca</code></pre>
+                    <p>
+                        Para criar um contest entre com usuário: system | senha: boca. Para gerenciar os usuários
+                        entre
+                        com usuário: admin | senha: boca.
+                    </p>
+
+
+
+                    <!-- Instalação no Linux -->
+
+                    <h2>Instalação no Linux Ubuntu</h2>
+                    <p>Tutorial de Instalação do BOCA Conteinerizado para Linux Ubuntu</p>
+                    <p>
+                        Observações iniciais: <br />
+                        Sempre que te forem feitas perguntas no terminal cujas opções de resposta são [Y/n], tecle Y
+                        e
+                        tecle Enter.<br />
+                        Antes de qualquer alteração sempre realizar apt-get update e apt-get upgrade com fim de
+                        obter
+                        sempre os recursos mais recentes.
+                    </p>
+                    <p>
+                        Para a instalação do BOCA conteinerizado utilizaremos o projeto do João Vitor Fazolo, nele
+                        temos
+                        a imagem de três contêineres, o boca-web, boca-jail e o banco de dados PostgreSQL. Os três
+                        containers trabalharam em conjunto para o funcionamento do BOCA.
+                    </p>
+                    <p>Abra o terminal e digite:</p>
+                    <pre><code>sudo docker ps</code></pre>
+                    <p>
+                        Se, após este comando, não houver nenhum container funcionando (o que é esperado, caso não
+                        tenha
+                        usado docker e esteja seguindo o tutorial do zero), aparecerá o seguinte:
+                    </p>
+
+                    <!-- Imagem -->
+
+                    <p>
+                        Após isso crie uma pasta e baixe os arquivos ‘docker-compose.yml’ e
+                        ‘docker-compose.prod.yml’
+                        que serão encontrados no repositório do João Fazolo. De preferência crie a pasta “boca” no
+                        diretório “/home/usuario” sendo “usuario” o nome do seu usuário do linux.
+                        Clique aqui para o repositório.
+                    </p>
+
+                    <!-- Imagem -->
+
+                    <p>
+                        Agora já no diretório em que se encontram os arquivos, execute:
+                    </p>
+                    <pre><code>sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d</code></pre>
+                    <p>
+                        Ao final da execução confira se aparece o que está na imagem abaixo:
+                    </p>
+
+                    <!-- Imagem -->
+
+                    <p>
+                        Se está como o que foi mostrado na imagem acima, então deu certo a criação do container
+                        BOCA, ou
+                        seja, você já o possui funcionando na sua máquina.
+                    </p>
+                    <p>
+                        Para acessar a interface do BOCA entre em:
+                    </p>
+                    <pre><code>http://localhost:8000/boca</code></pre>
+                    <p>
+                        Para criar um contest entre com usuário: system | senha: boca. Para gerenciar os usuários
+                        entre
+                        com usuário: admin | senha: boca.
                     </p>
                 </div>
             </section>
 
-            <!-- Final text section -->
-            <section class="row justify-content-center">
+
+            <!-- Criação de Contest Section -->
+            <section id="criacao-contest" class="py-5">
                 <div class="container">
-                    <p class="text-secondary mb-4">Texto final.</p>
+                    <h1>Criação de Contest no BOCA</h1>
+                    <p class="text-secondary mb-4">
+                        Saiba como criar e configurar um contest no BOCA para competições de programação.
+                    </p>
+                    <h2>Criando um Contest</h2>
+                    <p>
+                        Siga esse passo a passo para criar e ativar um contest:
+                    </p>
+                    <p>
+                        Vá para aba contest, então em new.
+                    </p>
+                    <p>
+                        Altere as informações que achar necessárias e então clique em activate. Clique em OK.
+                        (Altere/Verifique as informações do novo concurso criado e clique em "Enviar". Em seguida,
+                        clique em "Ativar" para ativar o novo concurso (depois disso, você será desconectado
+                        automaticamente).
+                    </p>
+                    <p>
+                        Aqui estão algumas explicações sobre os campos disponíveis:
+                    </p>
+                    <ul>
+                        <li>Nome: nome do concurso</li>
+                        <li>Data de início: quando o concurso começará</li>
+                        <li>Duração: quantos minutos o concurso tem</li>
+                        <li>Parar de responder: número de minutos dos quais as equipes não recebem as informações se
+                            suas corridas foram aceitas ou não. Normalmente, escolha 285 para quinze minutos sem
+                            respostas para as equipes.</li>
+                        <li>Parar placar: número de minutos dos quais o placar fica congelado (para manter o vencedor em
+                            segredo :-). Valor usual: 240.</li>
+                        <li>Penalidade: número de minutos que uma equipe é penalizada para cada vez que envia um código
+                            que não é aceito (esses minutos são contados apenas se a equipe receber um SIM para o
+                            problema correspondente, como feito em concursos do tipo ACM-ICPC). Valor usual: 20.</li>
+                        <li>Tamanho máximo de arquivo permitido para equipes: por motivos de segurança. Se você sabe que
+                            os arquivos de código-fonte são maiores, escolha outro valor.</li>
+                        <li>Número do site principal do concurso: que é o site principal do concurso (no caso de
+                            concursos multisite). Normalmente 1. SE ESTIVER REALIZANDO VÁRIOS SITES, TENHA CERTEZA DE
+                            USAR OS NÚMEROS CORRIDOS AQUI ATRIBUÍDOS POR QUEM ESTÁ COORDENANDO O CONCURSO MULTI-SITE!!
+                        </li>
+                        <li>Número do site local do concurso: que é o número do site atual do concurso (no caso de
+                            concursos multisite). SE ESTIVER REALIZANDO VÁRIOS SITES, TENHA CERTEZA DE USAR OS NÚMEROS
+                            CORRIDOS AQUI ATRIBUÍDOS POR QUEM ESTÁ COORDENANDO O CONCURSO MULTI-SITE!!</li>
+                    </ul>
+                    <p>
+                        Após criar e ativar um contest, logue com ‘admin’ e ‘boca’ para gerenciar usuários, problemas,
+                        linguagens, etc.
+                    </p>
+                    <p>
+                        Troque sua senha para uma senha segura.
+                    </p>
                 </div>
             </section>
+
         </main>
     </div>
 
     <!-- Footer section -->
     <footer>
         <div class="container_footer">
-            <!-- Group information -->
             <ul>
                 <h3>Grupo de Programação Competitiva</h3>
                 <p>Projeto de extensão do Instituto Federal do Triângulo Mineiro</p>
@@ -163,24 +418,20 @@
                     <img src="../img/if.png" class="logo_footer_img" alt="Logo 2" />
                 </div>
             </ul>
-            <!-- Training links -->
             <ul>
                 <h3>Treinamento</h3>
                 <li><a href="#">Sites de Estudo</a></li>
                 <li><a href="#">Principais Competições</a></li>
             </ul>
-            <!-- Tools links -->
             <ul>
                 <h3>Ferramentas</h3>
-                <li><a href="ferramentas.html">Como instalar o Docker</a></li>
-                <li><a href="ferramentas.html">Como instalar o BOCA</a></li>
-                <li><a href="ferramentas.html">Criação de problemas</a></li>
-                <li><a href="ferramentas.html">Perguntas frequentes</a></li>
+                <li><a href="ferramentas.html#ambiente-boca">Ambiente BOCA</a></li>
+                <li><a href="ferramentas.html#como-instalar-boca">Como instalar o BOCA</a></li>
+                <li><a href="ferramentas.html#criacao-contest">Criação de Contest</a></li>
             </ul>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

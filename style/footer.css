@@ -71,7 +71,7 @@ footer .container_footer .redes_sociais img {
 }
 
 /* Ajuste para telas menores (até 768px) */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 	.logo_footer {
 		justify-content: center;
 	}
@@ -83,7 +83,7 @@ footer .container_footer .redes_sociais img {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 	footer .container_footer {
 		flex-direction: column;
 		/* Centraliza colunas em telas menores */

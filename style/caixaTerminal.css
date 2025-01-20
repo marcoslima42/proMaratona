@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+pre{
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    white-space: pre-wrap; /* Faz o texto quebrar automaticamente quando necessário */
+    word-wrap: break-word; /* Quebra palavras longas que não cabem */
+}
+
+.caixaComando{
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 200px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    border-left: 6px solid rgb(25, 197, 25);
+
+}
+
+/* Responsividade*/
+@media (max-width: 600px) {
+    .caixaComando {
+        width: 95%; 
+        top: 100px;
+    }
+
+    pre {
+        font-size: 2px;
+    }
+}

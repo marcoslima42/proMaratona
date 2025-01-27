@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treinamento</title>
     <!-- Import CSS -->
-    <link rel="stylesheet" href="/style/treinamento.css">
-    <link rel="stylesheet" href="/style/navBar.css">
-    <link rel="stylesheet" href="/style/footer.css">
-    <link rel="stylesheet" href="/style/font.css">
-    <link rel="stylesheet" href="/style/banner.css">
-	<link rel="stylesheet" href="/style/caixaTerminal.css">
+    <link rel="stylesheet" href="../style/treinamento.css">
+    <link rel="stylesheet" href="../style/navBar.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/font.css">
+    <link rel="stylesheet" href="../style/banner.css">
+	<link rel="stylesheet" href="../style/caixaTerminal.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <!-- Link para o CSS externo -->
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shotcut icon" href="../img/logoBaloes.png" type="image/x-icon" />
+    <link rel="shotcut icon" href="../img/home/logoBaloes.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -25,14 +25,14 @@
 	<nav class="navbar navbar-expand-lg navbar-dark">
 		<div class="container">
 			<!-- Logo -->
-			<a href="index.html" class="navbar-brand">
-				<img src="../img/promaratona_logo.gif" class="logo-img" />
+			<a href="./index.html" class="navbar-brand">
+				<img src="../img/home/promaratona_logo.gif" class="logo-img" />
 			</a>
 			<!-- Botão Toggler -->
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
-				<span> <a><img src="../img/menu.png" class="menu-img" /></a> </span>
+			<button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="toggler-icon"></span>
+				<span class="toggler-icon"></span>
+				<span class="toggler-icon"></span>
 			</button>
 			<!-- Links e Dropdowns -->
 			<div class="collapse navbar-collapse" id="navbarNav">
@@ -43,8 +43,8 @@
 							Treinamento <i class="bi bi-caret-down-fill"></i>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="dropdown1">
-							<li><a class="dropdown-item" href="treinamento.html">Introdução à Programação Competitiva</a></li>
-							<li><a class="dropdown-item" href="presencial.html">Treinamento Presencial</a></li>
+							<li><a class="dropdown-item" href="./treinamento.html">Introdução à Programação Competitiva</a></li>
+							<li><a class="dropdown-item" href="./presencial.html">Treinamento Presencial</a></li>
 						</ul>
 					</li>
 					<!-- Dropdown 2 -->
@@ -111,6 +111,7 @@
 					<p>
 						Se tornar um programador diferenciado ao mesmo tempo que caça 
 						balões e conquista camisas legais…
+						<img src="../img/introPC/camisaLegal.jpg" alt="Camisa Maratona Mineira" class="imagemCentralizada imgMenor">
 						<br>
 						A Programação Competitiva, assim como o xadrez, é classificada como um esporte 
 						mental que exige paciência, estratégia, raciocínio lógico e visão de jogo. Essa 
@@ -132,7 +133,7 @@
 						Para estudantes do ensino fundamental, médio, superior, há várias competições disponíveis. 
 						Entre as principais estão a OBI e a Maratona de Programação (da SBC, ICPC).
 					</p>
-					<img src="/img/amoICPC.jpg" alt="Fase Mundial" class="imagemCentralizada">
+					<img src="../img/introPC/amoICPC.jpg" alt="Fase Mundial" class="imagemCentralizada" >
 					<h2 class="subTitulo">OBI</h2>
 					<p>
 						A Olimpíada Brasileira de Informática (OBI) é uma competição de programação realizada anualmente 
@@ -229,7 +230,7 @@
 					<p>Curso da UFMG sobre tópicos de programação competitiva, <a href="https://www.youtube.com/watch?v=cu3kKbkEZSw&list=PLFPppTfkqbfU6O6Ne87UrpqylAMYQ3bvX&ab_channel=MaratonaUFMG" class="hover-link" target="_blank">Playlist</a>.</p>
 				</div>
 				<a href="https://www.youtube.com/@gcc.cefetmg" target="_blank">
-					<img src="/img/gcc.png" alt="GCC" class="imagemCentralizada" style="width: 50%; height: auto;">
+					<img src="../img/introPC/gcc.png" alt="GCC" class="imagemCentralizada" style="width: 50%; height: auto;">
 				</a>
 				<div class="centralizado">
 					<p>Canal do grupo GCC com diversas aulas de diferentes temas, <a href="https://www.youtube.com/@gcc.cefetmg" class="hover-link" target="_blank">Link do Canal</a>.</p>
@@ -244,7 +245,7 @@
 				<div class="card-group">
 					<div class="card">
 						<a href="https://cpbook.net/" target="_blank">
-							<img src="/img/cp3.jpg" class="card-img-top" alt="Competitive Programming 3">
+							<img src="../img/introPC/cp3.jpg" class="card-img-top" alt="Competitive Programming 3">
 						</a>						
 						<div class="card-body">
 							<h5 class="tituloCard">Competitive Programming 3</h5>
@@ -254,7 +255,7 @@
 
 					<div class="card">
 						<a href="https://cses.fi/book/book.pdf" target="_blank">
-							<img src="/img/handbookCP.png" class="card-img-top" alt="Competitive Programmer’s Handbook">
+							<img src="../img/introPC/handbookCP.png" class="card-img-top" alt="Competitive Programmer’s Handbook">
 						</a>
 						<div class="card-body">
 							<h5 class="tituloCard">Competitive Programmer’s Handbook</h5>
@@ -264,7 +265,7 @@
 
 					<div class="card">
 						<a href="https://cp-algorithms.com/" target="_blank">
-							<img src="/img/cpAlgorithms.png" class="card-img-top" alt="Algorithms for Competitive Programming">
+							<img src="../img/introPC/cpAlgorithms.png" class="card-img-top" alt="Algorithms for Competitive Programming">
 						</a>
 						<div class="card-body">
 							<h5 class="tituloCard">Algorithms for Competitive Programming</h5>
@@ -323,7 +324,7 @@
 				</p>
 				<br>
 				<h2 class="subTitulo">Interface do BOCA para o participante</h2>
-				<img src="/img/interfaceBoca.png" alt="Interface do BOCA" class="imagemCentralizada" style="width: 75%; height: auto;">
+				<img src="../img/introPC/interfaceBoca.png" alt="Interface do BOCA" class="imagemCentralizada" style="width: 75%; height: auto;">
 				<br>
 				<p>
 					<b>Problems:</b> Nesta aba, você encontrará os problemas da prova, incluindo o enunciado completo, os detalhes sobre a entrada e saída de dados e o arquivo correspondente à questão.
@@ -361,8 +362,8 @@
 				<h3>Grupo de Programação Competitiva</h3>
 				<p>Projeto de extensão do Instituto Federal do Triângulo Mineiro</p>
 				<div class="logo_footer">
-					<img src="../img/promaratonaWhite.png" class="logo_footer_img" alt="Logo 1" />
-					<img src="../img/if.png" class="logo_footer_img" alt="Logo 2" />
+					<img src="../img/home/promaratonaWhite.png" class="logo_footer_img" alt="Logo 1" />
+					<img src="../img/home/if.png" class="logo_footer_img" alt="Logo 2" />
 				</div>
 				<!-- <div class="redes_sociais">
                         <img src="img/logoBaloes.png" alt="Instagram">
@@ -371,10 +372,10 @@
 			<!-- UL2 -->
 			<ul>
 				<h3>Treinamento</h3>
-				<li><a href="treinamento.html">Introdução à Programação Competitiva</a></li>
+				<li><a href="./treinamento.html">Introdução à Programação Competitiva</a></li>
 				<li><a href="#">Sites de Estudo</a></li>
 				<li><a href="#">Principais Competições</a></li>
-				<li><a href="presencial.html">Treinamento Presencial</a></li>
+				<li><a href="./presencial.html">Treinamento Presencial</a></li>
 			</ul>
 			<!-- UL3 -->
 			<ul>

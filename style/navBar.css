@@ -67,17 +67,12 @@
 	width: 150px;
 	height: auto;
 }
-
+/* 36 */
 .menu-img {
-	width: 36px;
+	width: 36px; 
 	/* Ajuste a largura conforme necessário */
 	height: auto;
 	/* Mantém a proporção original */
-}
-
-/* tirar borda botao menu hamburger */
-.navbar-toggler {
-	border: none;
 }
 
 .nav-item {
@@ -159,5 +154,55 @@
     margin-left: 4px; /* Espaçamento entre o texto e a seta */
     font-size: 0.6em; /* Ajuste do tamanho do ícone */
 }
+/* ///////////////////////////////////////////////// */
+/* botão do menu com animação */
 
+.custom-toggler {
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+	outline: none !important;
+    box-shadow: none !important;
+}
 
+/* Linhas do hambúrguer */
+.custom-toggler .toggler-icon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fdfde4; /* Cor personalizada */
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Transformações ao clicar (quando a classe "collapsed" é removida pelo Bootstrap) */
+.custom-toggler:not(.collapsed) .toggler-icon:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.custom-toggler:not(.collapsed) .toggler-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.custom-toggler:not(.collapsed) .toggler-icon:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Ajuste do botão em hover */
+.custom-toggler:hover .toggler-icon {
+    background-color: #e8e8d0; /* Cor levemente mais escura ao passar o mouse */
+}
+
+.custom-toggler:focus {
+    outline: none !important; /* Remove o contorno ao focar */
+    box-shadow: none !important; /* Remove a sombra ao focar */
+}

@@ -89,3 +89,7 @@ iframe {
     flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
     gap: 20px; /* Espaçamento entre os itens */
 }
+
+.imgMenor{
+    width: 75%;
+}

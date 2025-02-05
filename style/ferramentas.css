@@ -1,0 +1,77 @@
+.subTitulo2{
+    font-family: "titulosFont2";
+    font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+
+/* formatacao da caixa de comandos */
+.terminal-box {
+    background-color: #1e1e1e;
+    border-radius: 3px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    font-family: 'Courier New', monospace;
+    color: #e0e0e0;
+    overflow-x: auto;
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.terminal-line {
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+}
+
+.terminal-prompt {
+    color: #4CAF50;
+    margin-right: 8px;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.terminal-prompt {
+    color: #4CAF50;
+    margin-right: 8px;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.terminal-command {
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.terminal-comment {
+    color: #757575;
+    font-style: italic;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+/* barra de rolagem horizontal */
+.terminal-box::-webkit-scrollbar {
+    height: 6px;
+}
+
+.terminal-box::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+.terminal-box::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .terminal-box {
+        padding: 8px 10px;
+        margin: 10px 0;
+        font-size: 13px;
+    }
+    
+    .terminal-prompt {
+        margin-right: 6px;
+    }
+}

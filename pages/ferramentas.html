@@ -165,30 +165,18 @@
                         Para atualizar o WSL, execute:</p>
 
                     <pre class="terminal-box"><code class="terminal-code">
-<<<<<<< HEAD
                         <span class="terminal-prompt">> </span><span class="terminal-command">wsl --update<br></span>
-=======
-                        <span class="terminal-prompt">> <br> </span><span class="terminal-command">wsl --update<br></span>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
                     </code></pre>
                     <p>Atribua a versão 2 como padrão do WSL. Execute:</p>
 
                     <pre class="terminal-box"><code class="terminal-code">
-<<<<<<< HEAD
                         <span class="terminal-prompt">> </span><span class="terminal-command">wsl --set-default-version 2<br></span>
-=======
-                        <span class="terminal-prompt">> <br> </span><span class="terminal-command">wsl --set-default-version 2<br></span>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
                     </code></pre>
 
                     <p>Iremos instalar o Ubuntu, distribuição padrão do WSL. Para isso, execute o seguinte comando:</p>
 
                     <pre class="terminal-box"><code class="terminal-code">
-<<<<<<< HEAD
                         <span class="terminal-prompt">> </span><span class="terminal-command">wsl --install<br></span>
-=======
-                        <span class="terminal-prompt">> <br> </span><span class="terminal-command">wsl --install<br></span>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
                     </code></pre>
 
                     <p>Após instalar o Ubuntu, abrirá um novo terminal, sendo o próprio ambiente Linux, pedindo o nome
@@ -213,11 +201,7 @@
                         usuário do Ubuntu, que foi configurada durante a instalação:</p>
 
                     <pre class="terminal-box"><code class="terminal-code">
-<<<<<<< HEAD
                         <span class="terminal-prompt">$ </span><span class="terminal-command">for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done<br></span>
-=======
-                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done<br></span>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
                     </code></pre>
 
                     <p>Antes de instalar o Docker, execute o seguinte comando para configurar sua máquinaa:</p>
@@ -240,29 +224,11 @@
                         “After this operation, some additional disk space will be used. Do you want to continue? [Y/n]”,
                         tecle Y e Enter):</p>
 
-<<<<<<< HEAD
                     <pre><code>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</code></pre>
 
                     <p>Verifique se a instalação foi bem-sucedida executando a imagem <i>hello-world</i>:</p>
 
                     <pre><code>sudo docker run hello-world</code></pre>
-=======
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                            sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-                        <br></span>
-                    </code></pre>
-
-
-                    <p>Verifique se a instalação foi bem-sucedida executando a imagem <i>hello-world</i>:</p>
-
-
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                            sudo docker run hello-world
-                        <br></span>
-                    </code></pre>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 
                     <p>Deverá aparecer uma mensagem semelhante a essa:</p>
 
@@ -301,17 +267,8 @@
                     <p><strong>Observação:</strong> Ao utilizar o comando “sudo” pela primeira vez, será necessário
                         inserir a senha configurada durante a instalação do WSL 2 e pressionar Enter.</p>
                     <p>No terminal, execute:</p>
-<<<<<<< HEAD
 
                     <pre><code>sudo docker ps</code></pre>
-=======
-                    
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                            sudo docker ps
-                        <br></span>
-                    </code></pre>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 
                     <p>Caso nenhum container esteja em execução (o que é esperado, caso esteja seguindo o tutorial do
                         zero), aparecerá como retorno o seguinte no seu terminal:</p>
@@ -349,23 +306,13 @@
 
                     <p>No terminal Ubuntu, acesse o diretório do Windows onde os arquivos foram salvos:</p>
 
-<<<<<<< HEAD
                     <pre><code>cd /mnt/c</code></pre>
-=======
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                            cd /mnt/c
-                        <br></span>
-                    </code></pre>
-
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 
                     <p>Naturalmente, “cd” é o comando do bash do Linux para mudar de diretório. Com o “/mnt/c”, cria-se
                         um ponto de montagem do sistema de arquivos do Windows, possibilitando o acesso do Ubuntu aos
                         arquivos.</p>
                     <p>Copie a pasta “boca” para o diretório “home” do Ubuntu com o seguinte comando: (substitua
                         “usuario” pelo nome do seu usuário Linux)</p>
-<<<<<<< HEAD
 
                     <pre><code>sudo cp -r /mnt/c/boca /home/usuario</code></pre>
 
@@ -376,32 +323,6 @@
                     <p>Agora que estamos dentro do diretório da pasta “boca” no Ubuntu, execute o comando:</p>
 
                     <pre><code>sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d</code></pre>
-=======
-                    
-
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                            sudo cp -r /mnt/c/boca /home/usuario
-                        <br></span>
-                    </code></pre>
-
-                    <p>Agora você já tem acesso à pasta “boca” pelo próprio Ubuntu. Acesse-a com:</p>
-
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                            cd /home/usuario/boca
-                        <br></span>
-                    </code></pre>
-
-                    <p>Agora que estamos dentro do diretório da pasta “boca” no Ubuntu, execute o comando:</p>
-
-
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                            sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
-                        <br></span>
-                    </code></pre>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 
                     <p>Ao final da execução, confira se o resultado corresponde à imagem abaixo:</p>
 
@@ -412,15 +333,7 @@
                         possui funcionando na sua máquina.</p>
                     <p>Para acessar a interface do BOCA entre em:</p>
 
-<<<<<<< HEAD
                     <pre><code>http://localhost:8000/boca</code></pre>
-=======
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-command">
-                            http://localhost:8000/boca
-                        <br></span>
-                    </code></pre>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 
                     <p>Para obter informações sobre como criar e ativar um contest, confira a seção de <a
                             href="ferramentas.html#criacao-contest"><strong>Criação de Contest</strong></a>.</p>
@@ -446,15 +359,7 @@
 
                     <p>No terminal, execute:</p>
 
-<<<<<<< HEAD
                     <pre><code>sudo docker ps</code></pre>
-=======
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                            sudo docker ps
-                        <br></span>
-                    </code></pre>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 
                     <p>Caso nenhum container esteja em execução (o que é esperado, caso esteja seguindo o tutorial do
                         zero), aparecerá como retorno o seguinte no seu terminal:</p>
@@ -479,16 +384,7 @@
 
                     <p>Via terminal, vá ao diretório em que se encontram os arquivos e execute:</p>
 
-<<<<<<< HEAD
                     <pre><code>sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d</code></pre>
-=======
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                            sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
-                        <br></span>
-                    </code></pre>
-
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 
                     <p>Ao final da execução, confira se o resultado corresponde à imagem abaixo:</p>
 
@@ -499,17 +395,7 @@
                         possui funcionando na sua máquina.</p>
                     <p>Para acessar a interface do BOCA entre em:</p>
 
-<<<<<<< HEAD
                     <pre><code>http://localhost:8000/boca</code></pre>
-=======
-                    <pre><code></code></pre>
-
-                    <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt"></span><span class="terminal-command">
-                            http://localhost:8000/boca
-                        <br></span>
-                    </code></pre>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 
                     <p>Para obter informações sobre como criar e ativar um contest, confira a próxima seção.</p>
 
@@ -634,13 +520,7 @@
                             <ol>
                                 <li><strong>Remova o Docker completamente.</strong> Para isso, execute:
 
-<<<<<<< HEAD
                                     <pre><code>sudo systemctl stop docker
-=======
-                                <pre class="terminal-box"><code class="terminal-code">
-                                    <span class="terminal-prompt"></span><span class="terminal-command">
-                                        sudo systemctl stop docker
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli
 sudo apt-get purge -y docker-ce docker-ce-cli
 sudo apt-get autoremove -y
@@ -650,16 +530,7 @@ sudo rm -rf /var/lib/containerd
 sudo groupdel docker
 sudo rm /usr/local/bin/docker
 sudo rm /usr/local/bin/docker-compose
-<<<<<<< HEAD
 sudo rm /usr/local/bin/docker-machine</code></pre>
-=======
-sudo rm /usr/local/bin/docker-machine
-                                    <br></span>
-                                </code></pre>
-
-
-                                    <pre><code></code></pre>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 
                                 </li>
                                 <li><strong>Verifique se o Docker foi removido</strong>, executando o comando:
@@ -670,7 +541,6 @@ sudo rm /usr/local/bin/docker-machine
 
                                 <li><strong>Instale o Docker novamente.</strong> Para isso, execute:
 
-<<<<<<< HEAD
                                     <pre><code>sudo apt-get update
 sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
@@ -681,28 +551,6 @@ echo \
 $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
 sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update</code></pre>
-=======
-
-                                <pre class="terminal-box"><code class="terminal-code">
-                                    <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                                        sudo apt-get update
-                                    <br></span>
-                                </code></pre>
-
-                            <pre class="terminal-box"><code class="terminal-code">
-                                <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
-                                    sudo apt-get install ca-certificates curl<br>
-                                    sudo install -m 0755 -d /etc/apt/keyrings<br>
-                                    sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc<br>
-                                    sudo chmod a+r /etc/apt/keyrings/docker.asc<br>
-                                    echo \<br>
-                                    "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \<br>
-                                    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \<br>
-                                    sudo tee /etc/apt/sources.list.d/docker.list > /dev/null<br>
-                                    sudo apt-get update<br>
-                                </span>
-                            </code></pre>
->>>>>>> c5b87dd (Update: atualizacao na aba ferramentas)
 
                                 </li>
                                 <li><strong>Teste a instalação criando novamente o container

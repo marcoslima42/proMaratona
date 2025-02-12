@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Treinamento</title>
+    <title>Ferramentas</title>
     <!-- Import CSS -->
     <link rel="stylesheet" href="../style/treinamento.css">
     <link rel="stylesheet" href="../style/navBar.css">
@@ -73,8 +73,8 @@
 		</div>
 	</nav>
 
-    <div class="bannerTreinamento">
-		<div class="banner-text">INNTRODUÇÃO À PROGRAMAÇÃO COMPETITIVA</div>
+    <div class="bannerFerramentas">
+		<div class="banner-text-pouco-texto">FERRAMENTAS</div>
 	</div>
 
     <div class="wrapper">
@@ -114,8 +114,8 @@
                     <p>
                         Confira os passos necessários para instalar o BOCA em diferentes sistemas operacionais.
                     </p>
-                    <hr>
-                    <h3 class="subTitulo2">1. Pré-requisitos</h3>
+                    <br>
+                    <h2 class="subTitulo">1. Pré-requisitos</h2>
                     <p>Antes de instalar o BOCA, certifique-se de atender aos seguintes pré-requisitos, os quais
                         ensinamos como obtê-los: </p>
                     <ul>
@@ -142,9 +142,9 @@
                         Engine, mais próximo do Linux nativo.</p>
                     <p>A seguir, os requisitos para instalar o WSL 2.</p>
 
-                    <hr>
+                    <br>
 
-                    <h4>Requisitos mínimos para o WSL 2:</h4>
+                    <h4 class="subTitulo2">Requisitos mínimos para o WSL 2:</h4>
 
                     <ul>
                         <li>Windows 10 versão 2004 ou superior;</li>
@@ -156,29 +156,30 @@
                         atualizado, pois as dependências do WSL 2 são frequentemente aprimoradas pelo Windows Update.
                     </p>
 
-                    <hr>
+                    <br>
 
-                    <h4>Instalação do WSL 2 (apenas para usuários de Windows)</h4>
+                    <h4 class="subTitulo2">Instalação do WSL 2 (apenas para usuários de Windows)</h4>
 
                     <p>No PowerShell, siga os passos:</p>
                     <p>No Windows 10 a partir da versão 2004 ou no Windows 11, o WSL já está instalado.
                         Para atualizar o WSL, execute:</p>
 
                     <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">> </span><span class="terminal-command">wsl --update<br></span>
+                        <span class="terminal-prompt">><br></span><span class="terminal-command">wsl --update<br></span>
                     </code></pre>
                     <p>Atribua a versão 2 como padrão do WSL. Execute:</p>
 
                     <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">> </span><span class="terminal-command">wsl --set-default-version 2<br></span>
+                        <span class="terminal-prompt">><br></span><span class="terminal-command">wsl --set-default-version 2<br></span>
                     </code></pre>
 
                     <p>Iremos instalar o Ubuntu, distribuição padrão do WSL. Para isso, execute o seguinte comando:</p>
 
                     <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">> </span><span class="terminal-command">wsl --install<br></span>
+                        <span class="terminal-prompt">><br></span><span class="terminal-command">wsl --install<br></span>
                     </code></pre>
-
+                    
+                    <br>
                     <p>Após instalar o Ubuntu, abrirá um novo terminal, sendo o próprio ambiente Linux, pedindo o nome
                         de
                         usuário (<i>Unix username</i>) e a senha (<i>password</i>). Cuidado para não colocar uma senha
@@ -190,9 +191,9 @@
                     <p>Agora que os usuários de Windows possuem o Ubuntu a partir do WSL 2, a instalação do Docker será
                         a mesma para quem utiliza Windows e para quem usa Linux. Confira a seguir:</p>
 
-                    <hr>
+                    <br><br>
 
-                    <h3>2. Instalando Docker (válido para Windows e Linux Ubuntu)</h3>
+                    <h3 class="subTitulo">2. Instalando Docker (válido para Windows e Linux Ubuntu)</h3>
 
                     <p>Caso esteja no Ubuntu, entre no terminal. Caso esteja usando o Windows, na barra de pesquisa
                         procure por “Ubuntu” e tecle Enter. Independentemente do seu sistema operacional, siga os passos
@@ -201,10 +202,10 @@
                         usuário do Ubuntu, que foi configurada durante a instalação:</p>
 
                     <pre class="terminal-box"><code class="terminal-code">
-                        <span class="terminal-prompt">$ </span><span class="terminal-command">for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done<br></span>
+                        <span class="terminal-prompt">$<br></span><span class="terminal-command">for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done<br></span>
                     </code></pre>
 
-                    <p>Antes de instalar o Docker, execute o seguinte comando para configurar sua máquinaa:</p>
+                    <p>Antes de instalar o Docker, execute o seguinte comando para configurar sua máquina:</p>
 
                     <pre class="terminal-box"><code class="terminal-code">
                         <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
@@ -224,26 +225,35 @@
                         “After this operation, some additional disk space will be used. Do you want to continue? [Y/n]”,
                         tecle Y e Enter):</p>
 
-                    <pre><code>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</code></pre>
+                    <pre class="terminal-box"><code class="terminal-code">
+                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                            sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+                        <br></span>
+                    </code></pre>
 
                     <p>Verifique se a instalação foi bem-sucedida executando a imagem <i>hello-world</i>:</p>
 
-                    <pre><code>sudo docker run hello-world</code></pre>
+                    <pre class="terminal-box"><code class="terminal-code">
+                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                            sudo docker run hello-world
+                        <br></span>
+                    </code></pre>
 
                     <p>Deverá aparecer uma mensagem semelhante a essa:</p>
 
-                    <img src="../img/ferramentas/docker 1.png"
+                    <img src="../img/ferramentas/docker 1.png" class="imagemCentralizada imgMenor"
                         alt="Imagem da resposta obtida ao executar container hello-world."><br><br>
 
                     <p><strong>Pronto, você instalou o Docker com sucesso!</strong></p><br>
                     <p>Caso não tenha sido bem-sucedido até aqui, confira a seção de <a
-                            href="ferramentas.html#perguntas-frequentes"><strong>Perguntas Frequentes</strong></a>.</p>
+                            href="ferramentas.html#perguntas-frequentes" class="hover-link">perguntas frequentes</a>.</p>
                     <!-- FIM DO TUTURIAL DE INSTALAÇÃO DO DOCKER -->
 
-                    <hr>
-
+                    <br>
+                    <br>
+                    
                     <!-- INÍCIO DO TUTORIAL DE INSTALAÇÃO DO BOCA NO WINDOWS -->
-                    <h3>3. Instalação do BOCA no Windows (com WSL 2)</h3><br>
+                    <h3 class="subTitulo">3. Instalação do BOCA no Windows (com WSL 2)</h3><br>
 
                     <p>Observações iniciais: </p>
                     <ul>
@@ -262,36 +272,40 @@
                     </p>
 
                     <img src="../img/ferramentas/boca windows 1.png"
-                        alt="Pesquisando por Ubuntu no Menu Iniciar do Windows."><br><br>
+                        alt="Pesquisando por Ubuntu no Menu Iniciar do Windows." class="imagemCentralizada imgMenor"><br>
 
                     <p><strong>Observação:</strong> Ao utilizar o comando “sudo” pela primeira vez, será necessário
                         inserir a senha configurada durante a instalação do WSL 2 e pressionar Enter.</p>
                     <p>No terminal, execute:</p>
 
-                    <pre><code>sudo docker ps</code></pre>
+                    <pre class="terminal-box"><code class="terminal-code">
+                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                            sudo docker ps
+                        <br></span>
+                    </code></pre>
 
                     <p>Caso nenhum container esteja em execução (o que é esperado, caso esteja seguindo o tutorial do
                         zero), aparecerá como retorno o seguinte no seu terminal:</p>
 
                     <img src="../img/ferramentas/boca windows 2.png"
-                        alt="Resposta à primeira execução do comando docker ps."><br><br>
+                        alt="Resposta à primeira execução do comando docker ps." class="imagemCentralizada imgMenor"><br><br>
 
                     <p>Após isso, crie uma pasta onde baixará os arquivos ‘docker-compose.prod.yml’ e
-                        ‘docker-compose.yml’, encontrados no <a href="https://github.com/joaofazolo/boca-docker"
-                            target="_blank">repositório do GitHub <i>boca-docker</i> do João Fazolo</a>. Neste tutorial,
+                        ‘docker-compose.yml’, encontrados no <a href="https://github.com/joaofazolo/boca-docker" class="hover-link"
+                        target="_blank">repositório do GitHub <i>boca-docker</i> do João Fazolo</a>. Neste tutorial,
                         será criada uma pasta no diretório raiz do Windows, ou seja, em “C:\”, com o nome de “boca”.
                         Confira na imagem a seguir quais arquivos precisam ser baixados. Estão destacados em vermelho.
                     </p>
 
                     <img src="../img/ferramentas/boca windows 3.png"
-                        alt="Indicação visual de quais são os arquivos necessários."><br><br>
+                        alt="Indicação visual de quais são os arquivos necessários." class="imagemCentralizada imgMenor"><br>
 
                     <p><strong>Observação:</strong> Para baixar os arquivos no GitHub, clique sobre o arquivo e utilize
                         a opção de
-                        download apresentada abaixo: </p>
+                        download apresentada abaixo: </p><br>
 
                     <img src="../img/ferramentas/boca windows 3.1.png"
-                        alt="Indicação visual da opção de baixar arquivo no GitHub."><br><br>
+                        alt="Indicação visual da opção de baixar arquivo no GitHub." class="imagemCentralizada imgMenor"><br>
 
                     <p>Após tê-los baixado, será preciso transferi-los do Windows para o Ubuntu (WSL 2). Para isso, será
                         necessário entender como acessar e manipular arquivos no terminal.</p>
@@ -301,12 +315,15 @@
                     </p>
 
                     <img src="../img/ferramentas/boca windows 4.png"
-                        alt="Diagrama para ilustrar o processo de transferência de arquivo." width="640"
-                        height="215"><br><br>
+                        alt="Diagrama para ilustrar o processo de transferência de arquivo." class="imagemCentralizada imgMenor"><br>
 
                     <p>No terminal Ubuntu, acesse o diretório do Windows onde os arquivos foram salvos:</p>
 
-                    <pre><code>cd /mnt/c</code></pre>
+                    <pre class="terminal-box"><code class="terminal-code">
+                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                            cd /mnt/c
+                        <br></span>
+                    </code></pre>
 
                     <p>Naturalmente, “cd” é o comando do bash do Linux para mudar de diretório. Com o “/mnt/c”, cria-se
                         um ponto de montagem do sistema de arquivos do Windows, possibilitando o acesso do Ubuntu aos
@@ -314,36 +331,55 @@
                     <p>Copie a pasta “boca” para o diretório “home” do Ubuntu com o seguinte comando: (substitua
                         “usuario” pelo nome do seu usuário Linux)</p>
 
-                    <pre><code>sudo cp -r /mnt/c/boca /home/usuario</code></pre>
+                    <pre class="terminal-box"><code class="terminal-code">
+                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                            sudo cp -r /mnt/c/boca /home/usuario
+                        <br></span>
+                    </code></pre>
 
                     <p>Agora você já tem acesso à pasta “boca” pelo próprio Ubuntu. Acesse-a com:</p>
 
-                    <pre><code>cd /home/usuario/boca</code></pre>
+                    <pre class="terminal-box"><code class="terminal-code">
+                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                            cd /home/usuario/boca
+                        <br></span>
+                    </code></pre>
 
                     <p>Agora que estamos dentro do diretório da pasta “boca” no Ubuntu, execute o comando:</p>
 
-                    <pre><code>sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d</code></pre>
+                    <pre class="terminal-box"><code class="terminal-code">
+                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                            sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+                        <br></span>
+                    </code></pre>
 
+                    <br>
                     <p>Ao final da execução, confira se o resultado corresponde à imagem abaixo:</p>
 
                     <img src="../img/ferramentas/boca windows 5.png"
-                        alt="Resposta no terminal de que os containeres foram executados com sucesso."><br><br>
+                        alt="Resposta no terminal de que os containeres foram executados com sucesso." class="imagemCentralizada imgMenor"><br>
 
                     <p><strong>Parabéns!</strong> A criação do container BOCA foi bem-sucedida e, portanto, você já o
-                        possui funcionando na sua máquina.</p>
+                        possui funcionando na sua máquina.</p><br>
+
                     <p>Para acessar a interface do BOCA entre em:</p>
 
-                    <pre><code>http://localhost:8000/boca</code></pre>
+                    <pre class="terminal-box"><code class="terminal-code">
+                    <span class="terminal-command">
+                            http://localhost:8000/boca
+                        <br></span>
+                    </code></pre>
+                    
 
-                    <p>Para obter informações sobre como criar e ativar um contest, confira a seção de <a
-                            href="ferramentas.html#criacao-contest"><strong>Criação de Contest</strong></a>.</p>
+                    <p>Para obter informações sobre como criar e ativar um contest, confira a seção de 
+                        <a href="ferramentas.html#criacao-contest" class="hover-link">Criação de Contest</a>.</p>
                     <!-- FIM DO TUTORIAL DE INSTALAÇÃO DO BOCA NO WINDOWS -->
 
-                    <hr>
+                    <br><br>
 
                     <!-- INÍCIO DO TUTORIAL DE INSTALAÇÃO DO BOCA NO LINUX UBUNTU -->
 
-                    <h3>3. Instalação do BOCA no Linux Ubuntu</h3>
+                    <h3 class="subTitulo">3. Instalação do BOCA no Linux Ubuntu</h3>
                     <p>Tutorial de Instalação do BOCA Conteinerizado para Linux Ubuntu</p>
                     <p>Observações iniciais: </p>
                     <ul>
@@ -359,13 +395,17 @@
 
                     <p>No terminal, execute:</p>
 
-                    <pre><code>sudo docker ps</code></pre>
+                    <pre class="terminal-box"><code class="terminal-code">
+                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                            sudo docker ps
+                        <br></span>
+                    </code></pre><br>
 
                     <p>Caso nenhum container esteja em execução (o que é esperado, caso esteja seguindo o tutorial do
                         zero), aparecerá como retorno o seguinte no seu terminal:</p>
 
                     <img src="../img/ferramentas/boca windows 2.png"
-                        alt="Resposta à primeira execução do comando docker ps."><br><br>
+                        alt="Resposta à primeira execução do comando docker ps." class="imagemCentralizada imgMenor"><br>
 
                     <p>Após isso, crie uma pasta onde baixará os arquivos ‘docker-compose.prod.yml’ e
                         ‘docker-compose.yml’, encontrados no <a href="https://github.com/joaofazolo/boca-docker"
@@ -373,33 +413,42 @@
                         imagem a seguir quais arquivos precisam ser baixados. Estão destacados em vermelho.</p>
 
                     <img src="../img/ferramentas/boca windows 3.png"
-                        alt="Indicação visual de quais são os arquivos necessários."><br><br>
+                        alt="Indicação visual de quais são os arquivos necessários." class="imagemCentralizada imgMenor"><br>
 
                     <p><strong>Observação:</strong> Para baixar os arquivos no GitHub, clique sobre o arquivo e utilize
                         a opção de
                         download apresentada abaixo: </p>
 
                     <img src="../img/ferramentas/boca windows 3.1.png"
-                        alt="Indicação visual da opção de baixar arquivo no GitHub."><br><br>
+                        alt="Indicação visual da opção de baixar arquivo no GitHub." class="imagemCentralizada imgMenor"><br>
 
                     <p>Via terminal, vá ao diretório em que se encontram os arquivos e execute:</p>
 
-                    <pre><code>sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d</code></pre>
-
+                    <pre class="terminal-box"><code class="terminal-code">
+                        <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                            sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+                        <br></span>
+                    </code></pre>
+                    
+                    <br>
                     <p>Ao final da execução, confira se o resultado corresponde à imagem abaixo:</p>
 
                     <img src="../img/ferramentas/boca windows 5.png"
-                        alt="Resposta no terminal de que os containeres foram executados com sucesso."><br><br>
+                        alt="Resposta no terminal de que os containeres foram executados com sucesso." class="imagemCentralizada imgMenor"><br><br>
 
                     <p><strong>Parabéns!</strong> A criação do container BOCA foi bem-sucedida e, portanto, você já o
-                        possui funcionando na sua máquina.</p>
+                        possui funcionando na sua máquina.</p><br>
                     <p>Para acessar a interface do BOCA entre em:</p>
 
-                    <pre><code>http://localhost:8000/boca</code></pre>
+                    <pre class="terminal-box"><code class="terminal-code">
+                        <span class="terminal-command">
+                                http://localhost:8000/boca
+                            <br></span>
+                        </code></pre>
 
                     <p>Para obter informações sobre como criar e ativar um contest, confira a próxima seção.</p>
 
-                    <hr>
+                    <br>
 
                     <!-- FIM DO TUTORIAL DE INSTALAÇÃO DO BOCA NO LINUX UBUNTU -->
                 </div>
@@ -410,15 +459,15 @@
             <section id="criacao-contest" class="py-5">
                 <div class="container">
 
-                    <h1>Criação e Ativação de um Contest no BOCA</h1>
+                    <h1 class="titulo">Criação e Ativação de um Contest no BOCA</h1>
 
                     <p>Este tutorial apresenta um guia detalhado para criar e ativar um contest no sistema BOCA
                         (BOCA Online Contest Administrator). Siga os passos abaixo para configurar seu contest com
                         sucesso.</p>
 
-                    <hr>
+                    <br><br>
 
-                    <h3>1. Acessando a Aba Contest</h3>
+                    <h3 class="subTitulo2">1. Acessando a Aba Contest</h3>
                     <ol>
                         <li>Faça login utilizando as credenciais <strong>system</strong> e
                             <strong>boca</strong>.
@@ -429,9 +478,9 @@
                         </li>
                     </ol>
 
-                    <hr>
+                    <br>
 
-                    <h3>2. Configurando o Novo Contest</h3>
+                    <h3 class="subTitulo2">2. Configurando o Novo Contest</h3>
                     <p>Altere ou configure as informações necessárias para o novo contest nos campos fornecidos.
                         Abaixo está uma descrição detalhada dos principais campos:</p>
                     <ul>
@@ -458,9 +507,9 @@
                             número atribuído ao site atual, conforme instruções do coordenador do contest.</li>
                     </ul>
 
-                    <hr>
+                    <br>
 
-                    <h3>3. Ativando o Contest</h3>
+                    <h3 class="subTitulo2">3. Ativando o Contest</h3>
                     <ol>
                         <li>Revise as informações configuradas.</li>
                         <li>Clique no botão <strong>Send</strong> para salvar o novo contest.</li>
@@ -473,9 +522,9 @@
                         </li>
                     </ol>
 
-                    <hr>
+                    <br>
 
-                    <h3>4. Gerenciando o Contest</h3>
+                    <h3 class="subTitulo2">4. Gerenciando o Contest</h3>
                     <ol>
                         <li>Faça login novamente, agora utilizando as credenciais <strong>admin</strong> e
                             <strong>boca</strong>.
@@ -492,14 +541,14 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>Para mais orientações sobre como configurar seu contest, confira a <a
-                                href="https://github.com/cassiopc/boca/tree/master/doc"
-                                target="_blank"><strong>documentação oficial do BOCA</strong></a>.</li>
+                        <li>Para mais orientações sobre como configurar seu contest, confira a 
+                            <a href="https://github.com/cassiopc/boca/tree/master/doc" class="hover-link" 
+                            target="_blank">documentação oficial do BOCA</a>.</li>
                     </ol>
 
-                    <hr>
+                    <br>
 
-                    <h3>Considerações Finais</h3>
+                    <h3 class="subTitulo">Considerações Finais</h3>
                     <p>Este tutorial abordou o processo de criação e ativação de um contest no BOCA, incluindo a
                         orientação sobre configurações adicionais. Certifique-se de seguir todas as instruções e revisar
                         as configurações antes de ativar o contest para garantir que ele esteja alinhado às
@@ -510,69 +559,75 @@
             <!-- SEÇÃO: Perguntas Frequentes -->
             <section id="perguntas-frequentes" class="py-5">
                 <div class="container">
-                    <h1>Perguntas Frequentes</h1>
+                    <h1 class="titulo">Perguntas Frequentes</h1>
                     <p class="text-secondary mb-4">
-                    <ul>
-                        <li>
-                            <h4>
-                                Como faço quando o container <i>hello-world</i> não é executado?
-                            </h4>
-                            <ol>
-                                <li><strong>Remova o Docker completamente.</strong> Para isso, execute:
-
-                                    <pre><code>sudo systemctl stop docker
-sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli
-sudo apt-get purge -y docker-ce docker-ce-cli
-sudo apt-get autoremove -y
-sudo apt-get autoclean
-sudo rm -rf /var/lib/docker
-sudo rm -rf /var/lib/containerd
-sudo groupdel docker
-sudo rm /usr/local/bin/docker
-sudo rm /usr/local/bin/docker-compose
-sudo rm /usr/local/bin/docker-machine</code></pre>
-
-                                </li>
-                                <li><strong>Verifique se o Docker foi removido</strong>, executando o comando:
-
-                                    <pre><code>docker --version</code></pre>
-
-                                </li>
-
-                                <li><strong>Instale o Docker novamente.</strong> Para isso, execute:
-
-                                    <pre><code>sudo apt-get update
-sudo apt-get install ca-certificates curl
-sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-echo \
-"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-$(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get update</code></pre>
-
-                                </li>
-                                <li><strong>Teste a instalação criando novamente o container
-                                        <i>hello-world</i>:</strong><br>
-
-                                    <pre><code>sudo docker run hello-world</code></pre>
-
-                                </li>
-                            </ol>
-                        <!-- <li>Referência para instalação e desinstalação: <a
-                                href="https://docs.docker.com/engine/install/ubuntu/"
-                                target="_blank">https://docs.docker.com/engine/install/ubuntu/</a>
-                        </li> -->
-                    </ul>
+                        <br>
+                        <h4 class="subTitulo2">
+                            Como faço quando o container <i>hello-world</i> não é executado?
+                        </h4>
+                        <ol>
+                            <li>
+                                <strong>Remova o Docker completamente.</strong> Para isso, execute:
+                                <pre class="terminal-box"><code class="terminal-code">
+                                    <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                                        sudo systemctl stop docker<br>
+                                        sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli<br>
+                                        sudo apt-get purge -y docker-ce docker-ce-cli<br>
+                                        sudo apt-get autoremove -y<br>
+                                        sudo apt-get autoclean<br>
+                                        sudo rm -rf /var/lib/docker<br>
+                                        sudo rm -rf /var/lib/containerd<br>
+                                        sudo groupdel docker<br>
+                                        sudo rm /usr/local/bin/docker<br>
+                                        sudo rm /usr/local/bin/docker-compose<br>
+                                        sudo rm /usr/local/bin/docker-machine<br>
+                                    </span>
+                                </code></pre>
+                                <br>
+                            </li>
+                            <li>
+                                <strong>Verifique se o Docker foi removido</strong>, executando o comando:
+                                <pre class="terminal-box"><code class="terminal-code">
+                                    <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                                        docker --version
+                                    <br></span>
+                                </code></pre>
+                                <br>
+                            </li>
+                            <li>
+                                <strong>Instale o Docker novamente.</strong> Para isso, execute:
+                                <pre class="terminal-box"><code class="terminal-code">
+                                    <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                                        sudo apt-get update<br>
+                                        sudo apt-get install ca-certificates curl<br>
+                                        sudo install -m 0755 -d /etc/apt/keyrings<br>
+                                        sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc<br>
+                                        sudo chmod a+r /etc/apt/keyrings/docker.asc<br>
+                                        echo \<br>
+                                        "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \<br>
+                                        $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \<br>
+                                        sudo tee /etc/apt/sources.list.d/docker.list > /dev/null<br>
+                                        sudo apt-get update<br>
+                                    </span>
+                                </code></pre>
+                                <br>
+                            </li>
+                            <li>
+                                <strong>Teste a instalação criando novamente o container <i>hello-world</i>:</strong>
+                                <pre class="terminal-box"><code class="terminal-code">
+                                    <span class="terminal-prompt">$ <br> </span><span class="terminal-command">
+                                        sudo docker run hello-world
+                                    <br></span>
+                                </code></pre>
+                                <br>
+                            </li>
+                        </ol>
+                        
                 </div>
             </section>
 
 			</section>
-			
-			<div class="caixaComando">
-				<pre><code>printf(<span style="color: #FF6961;">“Seu foco determina sua realidade.”</span>);</code></pre>
-			</div>
+
 			<br><br>
 		</div>
     </div>

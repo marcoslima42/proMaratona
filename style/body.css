@@ -126,3 +126,9 @@ main h1 {
     background-color: rgba(7, 59, 58, 0.1); /* Fundo com opacidade */
 }
 
+.pro-maratona {
+    color: #073b3a;
+    font-family: bannerFont;
+    font-size: 1em;
+}
+

@@ -64,11 +64,23 @@
 	justify-content: center;
 }
 
+.bannerConhecaMais{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: url("../img/conhecaMais/alunos.jpg") no-repeat top center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* Camada escura */
 .bannerHome::before,
 .bannerTreinamento::before,
 .bannerPresencial::before,
-.bannerFerramentas::before{
+.bannerFerramentas::before,
+.bannerConhecaMais::before{
 	content: "";
 	position: absolute;
 	top: 0;

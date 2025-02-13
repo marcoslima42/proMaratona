@@ -1,0 +1,30 @@
+.pro-maratona {
+    color: #073b3a;
+    font-family: bannerFont;
+    font-size: 1.5em;
+}
+
+.custom-card-img {
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Define um tamanho fixo para o carrossel */
+.carousel-inner {
+    max-height: 400px;
+    /* Altura fixa */
+}
+
+/* Ajusta as imagens sem cortes */
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    background-color: #2e2e2e;
+}

@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "menuFont";
-	src: url("../fonts/Montserrat.ttf"), format("truetype");
+	src: url("/fonts/Montserrat.ttf"), format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -8,35 +8,35 @@
 /* fonts/Rajdhani.ttf */
 @font-face {
 	font-family: "bannerFont";
-	src: url("../fonts/Danbury.otf"), format("opentype");
+	src: url("/fonts/Danbury.otf"), format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "footerFont";
-	src: url("../fonts/RedHatDisplay.ttf"), format("truetype");
+	src: url("/fonts/RedHatDisplay.ttf"), format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "titulosFont";
-	src: url("../fonts/Lato-Black.ttf"), format("truetype");
+	src: url("/fonts/Lato-Black.ttf"), format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "conteudoFont";
-	src: url("../fonts/Lora.ttf"), format("truetype");
+	src: url("/fonts/Lora.ttf"), format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "titulosFont2";
-	src: url("../fonts/OpenSans.ttf"), format("truetype");
+	src: url("/fonts/OpenSans.ttf"), format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }

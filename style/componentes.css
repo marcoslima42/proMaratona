@@ -1,0 +1,92 @@
+/*------------- CAIXA DE COMANDO -------------*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+pre{
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    white-space: pre-wrap; /* Faz o texto quebrar automaticamente quando necessário */
+    word-wrap: break-word; /* Quebra palavras longas que não cabem */
+}
+
+.caixaComando{
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 200px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    border-left: 6px solid rgb(25, 197, 25);
+
+}
+
+/* Responsividade*/
+@media (max-width: 600px) {
+    .caixaComando {
+        width: 95%; 
+        top: 100px;
+    }
+
+    pre {
+        font-size: 2px;
+    }
+}
+
+/*------------- FIM DE COMPONENTES -------------*/
+
+
+
+/*------------- BOTÃO MENU -------------*/
+
+.navbar-toggler.custom-toggler,
+.navbar-toggler.custom-toggler:focus,
+.navbar-toggler.custom-toggler:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.navbar-toggler.custom-toggler svg {
+    height: 2.5em; 
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: #fdfde4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+/* --- ESTADO ATIVO --- */
+.navbar-toggler[aria-expanded="true"] svg {
+    transform: rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+/* Hover */
+.navbar-toggler:hover .line {
+    stroke: #00bcd4;
+}

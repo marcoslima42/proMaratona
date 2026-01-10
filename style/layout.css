@@ -1,215 +1,43 @@
+/*espaçamento para navbar não sobrepor o banner*/
+body {
+    padding-top: 115px; 
+}
+
 /*------------- NAVBAR -------------*/
 
-
-/* Estilo da navbar */
 .navbar {
-	background-color: #073b3a;
-	/* Cor da navbar*/
-	padding-top: 10px;
-	/* Aumenta a altura do topo da navbar */
-	padding-bottom: 15px;
-	/* Aumenta a altura da parte inferior da navbar */
+    background-color: #073b3a;   
 }
 
-.nav-item {
-	padding-top: 10px;
-	/* Aumenta a altura do topo da navbar */
-	padding-bottom: 500x;
-	/* Aumenta a altura da parte inferior da navbar */
-	margin-top: 15px;
-	font-size: 1.5em;
-	font-family: "menuFont";
-	font-weight: normal;
-}
-
-.navbar-brand {
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 24px;
-}
-
-.navbar-brand span {
-	color: #cc6666;
-}
-
-/* Estilo inicial para todos os links da navbar */
-.navbar-nav .nav-link {
-    position: relative;
-    color: #fdfde4;
-    font-weight: bold;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    text-decoration: none;
-	display: inline-block;
-}
-.navbar-nav .nav-link:hover {
-	color: #f4f3e6;
-	/* text-shadow: 0px 3px 20px #fff; */
-	text-decoration-line: underline;
-}
-
-/* Estilo do ícone social */
-.social-icon {
-	width: 30px;
-	height: 30px;
-	background-color: #ffffff;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-left: 20px;
-}
-
-.social-icon img {
-	width: 18px;
-	height: 18px;
-}
-
-.logo-img {
-	width: 150px;
-	height: auto;
-}
-/* 36 */
-.menu-img {
-	width: 36px; 
-	/* Ajuste a largura conforme necessário */
-	height: auto;
-	/* Mantém a proporção original */
-}
-
-.nav-item {
-	font-size: 1.2em;
-}
-
-.navbar-nav .nav-link {
-	font-size: 1em;
-}
-
-/* efeito hover */
-
-/* Barra invisível inicialmente */
-.navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0; /* Começa da esquerda */
-    width: 0; /* Largura inicial: 0 (invisivel) */
-    height: 3px; /* Altura da barra */
-    background-color: #fdfde4; /* Cor da barra */
-    transition: width 0.3s ease; /* velocidade que cresce a barra */
-    visibility: hidden; /* estado inicial invisivel */
-}
-
-/* Barra aparece ao passar o mouse */
-.navbar-nav .nav-link:hover::after {
-    width: 100%;
-    visibility: visible; /* Torna a barra visível */
-}
-
-/* Estilo de hover no texto */
-.navbar-nav .nav-link:hover {
-    color: #f4f3e6;
-    text-decoration: none;
-}
-
-/* Estilo de hover que dar cor a linha dentro do submenu */
-.navbar-nav .dropdown-menu .dropdown-item:hover {
-	background-color: #066b6a; 
-	color: #fff;
-}
-
-/* submenu aparecendo quando passa o mouse */
-@media (min-width: 990px) {
-	/* Adicionando a setinha ao lado do nome do menu */
-	.navbar-nav .nav-link .arrow {
-		font-size: 0.8em;
-		margin-left: 5px; /* Espaçamento entre o nome e a setinha */
-	}
-
-	/* Mostrar o submenu ao passar o mouse */
-	.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-		display: block; /* Exibe o submenu quando o item pai for hover */
-	}
-
-	/* Estilo para o submenu */
-	.navbar-nav .dropdown-menu {
-		display: none; /* O submenu começa oculto */
-		position: absolute; 
-		top: 100%; /* Alinha ao item pai */
-		left: 0;
-		background-color: #ffffff;
-		border: none;
-		border-radius: 5px;
-		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-	}
-
-	/* Barra que cresce do hover */
-	.navbar-nav .nav-link:hover::after {
-		width: 100%;
-		visibility: visible;
-	}
-}
-
-/* tamanho da seta dos botoes da navbar */
-
-.nav-link .bi {
-    margin-left: 4px; /* Espaçamento entre o texto e a seta */
-    font-size: 0.6em; /* Ajuste do tamanho do ícone */
-}
-/* ///////////////////////////////////////////////// */
-/* botão do menu com animação */
-
-.custom-toggler {
-    border: none !important;
-    background: none !important;
-    padding: 0 !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-	outline: none !important;
-    box-shadow: none !important;
-}
-
-/* Linhas do hambúrguer */
-.custom-toggler .toggler-icon {
+/* Logo */
+.navbar-brand .logo-img {
+    width: 150px;
     display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #fdfde4; /* Cor personalizada */
-    border-radius: 3px;
-    transition: all 0.3s ease;
-    transform-origin: center;
 }
 
-/* Transformações ao clicar (quando a classe "collapsed" é removida pelo Bootstrap) */
-.custom-toggler:not(.collapsed) .toggler-icon:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+/* Itens da lista */
+.navbar-nav .nav-link {
+    color: #fdfde4;
+    font-family: "menuFont";
+	font-weight: bold;
+    transition: color 0.3s ease; 
 }
 
-.custom-toggler:not(.collapsed) .toggler-icon:nth-child(2) {
-    opacity: 0;
+/* Hover */
+.navbar-nav .nav-link:hover {
+    color: #00bcd4;
 }
 
-.custom-toggler:not(.collapsed) .toggler-icon:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+@media (max-width: 991px) {
+    
+    .navbar-collapse {
+        padding-top: 15px; 
+    }
+    
+    .navbar-nav .nav-link {
+        margin-bottom: 10px; 
+    }
 }
-
-/* Ajuste do botão em hover */
-.custom-toggler:hover .toggler-icon {
-    background-color: #e8e8d0; /* Cor levemente mais escura ao passar o mouse */
-}
-
-.custom-toggler:focus {
-    outline: none !important; /* Remove o contorno ao focar */
-    box-shadow: none !important; /* Remove a sombra ao focar */
-}
-
 
 /*------------- FIM DA NAVBAR -------------*/
 
@@ -220,108 +48,27 @@
 
 
 footer {
-	background-color: #00202a;
-	padding: 40px 20px;
-	color: white;
-	text-align: center;
-	font-family: "footerFont";
+    background-color: #00202a;
+    padding: 40px 0; 
+    color: white;
+    font-family: "footerFont";
 }
 
-/* Classes footer */
-footer .container_footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	flex-wrap: wrap;
-	max-width: 1200px;
-	margin: 0 auto;
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-footer .container_footer ul {
-	flex: 1;
-	min-width: 200px;
-	margin: 0 20px;
-	list-style: none;
-	padding: 0;
-	/* Mantem os textos alinhados a esquerda */
-	text-align: left;
+.footer-link:hover {
+    color: #00bcd4;
 }
 
-footer .container_footer ul h3 {
-	margin-bottom: 16px;
-	font-weight: 600;
-}
-
-footer .container_footer ul p {
-	margin-bottom: 20px;
-	line-height: 1.6;
-}
-
-footer .container_footer li {
-	margin: 10px 0;
-}
-
-footer .container_footer a {
-	color: white;
-	text-decoration: none;
-	transition: color 0.3s ease;
-}
-
-footer .container_footer a:hover {
-	color: #00bcd4;
-}
-
-/* eventuamente quando for adicionar logo de redes sociais 
-footer .container_footer .redes_sociais img {
-    margin-top: 10px;
-    width: 30px;
+/* Logos */
+.footer-logo {
+    width: 100px;
     height: auto;
-} */
-
-/* ------------------------------------------------------------- */
-/* Tratamento de  responsividade */
-/* ------------------------------------------------------------- */
-
-/* Tamanho tela padrao desktop */
-.logo_footer {
-	display: flex;
-	gap: 20px;
-	align-items: center;
-	justify-content: flex-start;
-	margin-top: 10px;
 }
-
-/* Ajuste para telas menores (até 768px) */
-@media (max-width: 1000px) {
-	.logo_footer {
-		justify-content: center;
-	}
-}
-
-.logo_footer_img {
-	width: 100px;
-	height: auto;
-}
-
-/* Responsividade */
-@media (max-width: 1000px) {
-	footer .container_footer {
-		flex-direction: column;
-		/* Centraliza colunas em telas menores */
-		align-items: center;
-		text-align: center;
-	}
-
-	footer .container_footer ul {
-		margin-bottom: 20px;
-		/* Ajusta para centralizar o texto */
-		text-align: center;
-	}
-
-	/* footer .container_footer .redes_sociais img {
-        margin: 0 5px;
-    } */
-}
-
 
 /*------------- FIM DO FOOTER -------------*/

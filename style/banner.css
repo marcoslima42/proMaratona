@@ -1,94 +1,78 @@
-.bannerHome{
-	position: relative;
-	width: 100%;
-	height: 400px;
-	background: url("../img/home/nacional.jpg") no-repeat top center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.bannerHome,
+.bannerTreinamento,
+.bannerPresencial,
+.bannerFerramentas,
+.bannerConhecaMais {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+	height: 375px;
 }
 
-.bannerTreinamento{
-	position: relative;
-	width: 100%;
-	height: 400px;
-	background: url("../img/introPC/treinamento.png") no-repeat top center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.bannerHome { 
+	background-image: url("../img/home/nacional.jpg"); 
 }
 
-.bannerPresencial{
-	position: relative;
-	width: 100%;
-	height: 400px;
-	background: url("../img/treinaPresencial/quadroBranco.jpg") no-repeat top center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+.bannerTreinamento { background-image: url("../img/introPC/treinamento.png"); }
 
-.banner-text{
-	position: absolute;
-	color: white;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-	text-align: center;
-	z-index: 2;
-	font-size: 2em;
-	font-family: "bannerFont";
-	font-weight: bold;
-}
+.bannerPresencial { background-image: url("../img/treinaPresencial/quadroBranco.jpg"); }
 
-.banner-text-pouco-texto{
-	position: absolute;
-	color: white;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-	text-align: center;
-	z-index: 2;
-	font-size: 2.5em;
-	font-family: "bannerFont";
-	font-weight: bold;
-}
+.bannerFerramentas { background-image: url("../img/ferramentas/ferramentas.png"); }
 
-.bannerFerramentas{
-	position: relative;
-	width: 100%;
-	height: 400px;
-	background: url("../img/ferramentas/ferramentas.png") no-repeat top center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+.bannerConhecaMais { background-image: url("../img/conhecaMais/alunos.jpg"); }
 
-.bannerConhecaMais{
-	position: relative;
-	width: 100%;
-	height: 400px;
-	background: url("../img/conhecaMais/alunos.jpg") no-repeat top center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-/* Camada escura */
+/* Overlay escuro */
 .bannerHome::before,
 .bannerTreinamento::before,
 .bannerPresencial::before,
 .bannerFerramentas::before,
-.bannerConhecaMais::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	/* Escurecimento com opacidade */
-	z-index: 1;
-	/* Camada escura abaixo do texto */
+.bannerConhecaMais::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner-text,
+.banner-text-pouco-texto {
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 2; 
+    font-family: "bannerFont", sans-serif;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.banner-text {
+    font-size: 2.3em;
+}
+
+.banner-text-pouco-texto {
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .bannerHome,
+    .bannerTreinamento,
+    .bannerPresencial,
+    .bannerFerramentas,
+    .bannerConhecaMais {
+        height: 300px;
+    }
+
+    .banner-text { font-size: 1.6em; }
+    .banner-text-pouco-texto { font-size: 1.8em; }
 }

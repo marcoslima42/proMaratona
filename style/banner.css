@@ -16,9 +16,7 @@
 	height: 375px;
 }
 
-.bannerHome { 
-	background-image: url("../img/home/nacional.jpg"); 
-}
+.bannerHome { background-image: url("../img/home/nacional.jpg"); }
 
 .bannerTreinamento { background-image: url("../img/introPC/treinamento.png"); }
 

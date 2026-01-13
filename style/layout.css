@@ -1,3 +1,15 @@
+
+:root {
+    --verdePrincipal: #073b3a;   
+    --verdeEscuro: #003024; 
+    --textoCinza: #333;  
+    --creme: #fdfde4; 
+    --rosaPastel: #ff6961;
+    --verdeFooter: #00202a;      
+    --bg-num-color: rgba(7, 59, 58, 0.1); 
+}
+
+
 /*espaçamento para navbar não sobrepor o banner*/
 body {
     padding-top: 115px; 
@@ -6,7 +18,7 @@ body {
 /*------------- NAVBAR -------------*/
 
 .navbar {
-    background-color: #073b3a;   
+    background-color: var(--verdePrincipal);   
 }
 
 /* Logo */
@@ -17,7 +29,7 @@ body {
 
 /* Itens da lista */
 .navbar-nav .nav-link {
-    color: #fdfde4;
+    color: var(--creme);
     font-family: "menuFont";
 	font-weight: bold;
     transition: color 0.3s ease; 
@@ -25,7 +37,7 @@ body {
 
 /* Hover */
 .navbar-nav .nav-link:hover {
-    color: #00bcd4;
+    color: var(--rosaPastel);
 }
 
 @media (max-width: 991px) {
@@ -48,7 +60,7 @@ body {
 
 
 footer {
-    background-color: #00202a;
+    background-color: var(--verdeFooter);
     padding: 40px 0; 
     color: white;
     font-family: "footerFont";
@@ -62,7 +74,7 @@ footer {
 }
 
 .footer-link:hover {
-    color: #00bcd4;
+    color: var(--rosaPastel);
 }
 
 /* Logos */
@@ -72,3 +84,130 @@ footer {
 }
 
 /*------------- FIM DO FOOTER -------------*/
+
+/*------------- LAYOUT BODY -------------*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.conteudoLeitura {
+    font-family: "conteudoFont";
+    font-size: 1.2rem;
+}
+
+
+body {
+    background-color: white;
+    font-family: "Inter", sans-serif !important;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: "Inter", sans-serif;
+}
+
+/*------------- cartao bem vindo -------------*/
+
+.bemVindoH2 {
+    font-family: "footerFont";
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--textoCinza);
+    text-align: center;
+    
+    /* Linha abaixo do titulo */
+    border-bottom: 2px solid #ddd;
+    width: 54%;
+    margin: 0 auto 16px auto;
+    padding-bottom: 8px;
+}
+
+.textoBoasNovas {
+    font-family: Arial, sans-serif;
+    color: var(--textoCinza);
+    text-align: justify;
+    line-height: 1.6;
+    
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.pro-maratona {
+    color: var(--verdePrincipal);
+    font-family: "bannerFont";
+    font-size: 1em;
+}
+
+/*------------- cartao objetivos -------------*/
+
+.objetivo-texto {
+    font-family: "footerFont";
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* Card com efeito de hover */
+.feature-card {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--verdeEscuro);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+/*------------- como usar (sera removido) -------------*/
+
+.textoCor {
+    color: var(--verdeEscuro);
+}
+
+.bgNum {
+    background-color: var(--bg-num-color);
+}
+
+
+@media (max-width: 700px) {
+    #inicio img {
+        display: none;
+    }
+
+    .bemVindoH2 {
+        font-size: 20px;
+        
+        width: auto; 
+        margin-bottom: 8px;
+        
+        margin-left: 30px;
+        margin-right: 30px;
+        
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .textoBoasNovas {
+        max-width: 100%;
+        margin: 10px 11px; 
+        padding: 10px 0;
+    }
+}
+
+/*------------- FIM DE LAYOUT BODY -------------*/

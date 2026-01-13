@@ -1,9 +1,3 @@
-.wrapper{
-    /* margin-top: 0rem; */
-    font-family: "conteudoFont";
-    font-size: 1.2rem;
-}
-
 .titulo{
     font-family: "titulosFont2";
     font-size: 2.5rem;
@@ -52,7 +46,7 @@
 }
 
 .hover-link:hover {
-    color: #FF6961;  /* Cor quando passar o mouse */
+    color: #FF6961;  
 }
 
 .video-container {
